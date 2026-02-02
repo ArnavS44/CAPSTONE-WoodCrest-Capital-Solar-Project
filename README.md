@@ -1,11 +1,11 @@
 # CAPSTONE-1-WoodCrest-Capital-Solar-Project
 
 # Team Members
-Arnav Saxena
-John Slaughter
-Sebastian Speer
-Matthew Best
-Antonio Gonzalez
+- Arnav Saxena
+- John Slaughter
+- Sebastian Speer
+- Matthew Best
+- Antonio Gonzalez
 
 # Trello Board
 https://trello.com/b/i0UvLVKs/capstone-group-5-sprint-0
