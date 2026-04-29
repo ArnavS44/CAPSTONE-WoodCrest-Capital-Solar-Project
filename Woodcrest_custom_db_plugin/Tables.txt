@@ -1,0 +1,47 @@
+So the way this plug in interfaces with the wordpress site 
+we use "Shortcodes". These are abbrevations of this plugins code 
+to display various tables that can be placed anywhere on the site
+(as long as the respected users have permission)
+
+-To change the functionality, that is located in "shortcodes.php"
+-To change the associated css that is in "style.css" or use divi
+-To change how the plugin interfaces with the db that is in "dp.php"
+-To alter the admin forms that is in "admin-pages.php"
+-And "woodcrest-power.php" handles the plug ins identity (no changy)
+
+ShortCodes For Tenant Dashboard:
+    [woodcrest_tenant_header] : Displays the tenant's name and email
+    [woodcrest_tenant_summary] : Shows the current balance, previous month, and monthly change.
+    [woodcrest_tenant_properties] : Tables all properties and suites currently occupied by the tenant.
+    [woodcrest_tenant_electric] : section showing electric meter readings and usage history.
+    [woodcrest_tenant_water] :  section showing water meter readings and usage history.
+    [woodcrest_tenant_invoices] : List of all historic invoices with their payment status.
+
+For Property Manager Dashboard:
+
+    The BUTTONS:
+        [woodcrest_card_active_accounts] : Total number of currently active tenants.
+        [woodcrest_card_unpaid_bills] : Count of invoices that have not been confirmed.
+        [woodcrest_card_invoices] : Total dollar amount of invoices for the current period.
+        [woodcrest_card_usage] : Count of active electric meters being managed.
+        [woodcrest_card_billing] : Displays the total billing change compared to the previous month.
+        [woodcrest_card_properties] : Total count of properties under the manager’s portfolio.
+
+    The Tables:
+        [woodcrest_manager_header] : Manager's name, email, and "Property Manager" badge.
+        [woodcrest_manager_banner] : Title bar ("DASHBOARD / UTILITY SUMMARY").
+        [woodcrest_manager_action_grid] : A container that automatically renders all 6 buttons in a grid.
+        [woodcrest_manager_tenant_table] : Searchable table of all tenants 
+        [woodcrest_manager_usage_table] : Overview of kWh and Water usage per tenant/meter.
+        [woodcrest_manager_billing_table] : Summary of costs and invoice status across the portfolio.
+        [woodcrest_manager_summary_stats] : A panel showing manager identity and property counts.
+        [woodcrest_manager_unpaid_bills] : Focused table showing only bills that require attention.
+
+For Admin Dashboard: 
+    [woodcrest_admin_demo_portal] – (Admin Only) A searchable directory of all users with links for other users views.
+
+For Login: 
+    [woodcrest_login_form] – sign on form 
+    [woodcrest_dashboard_router] – Logic only to redirect users to thier respected page
+
+  
