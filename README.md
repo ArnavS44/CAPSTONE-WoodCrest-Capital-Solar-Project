@@ -14,3 +14,6 @@ WoodCrest Capital is planning on developing a web application that connects to a
 
 https://trello.com/b/i0UvLVKs/capstone-group-5-sprint-0
 
+Note: The site is managed outside our control in coming soon mode currently, but once permitted, the following link will work:
+https://billbacks.woodcrestmanagement.com/
+
