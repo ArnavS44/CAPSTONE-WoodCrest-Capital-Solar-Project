@@ -1,0 +1,7 @@
+Master_Bill1: {
+	Property: UNT
+	Account: UNT 1
+	Date: 2026-04-25
+	Amount: 700.00
+	Status: DRAFT
+}

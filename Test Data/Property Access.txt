@@ -1,0 +1,39 @@
+User1 = {
+	Name: Antonio Gonzalez
+	Property: UNT
+	Scope: PROPERTY_MANAGER
+	Start: 2026-04-01
+	End: NULL
+}
+
+User2 = {
+	Name: Arnav Saxena
+	Property: UNT
+	Scope: PROPERTY_MANAGER
+	Start: 2026-04-01
+	End: NULL
+}
+
+User3 = {
+	Name: Matthew Best
+	Property: UNT
+	Scope: PROPERTY_MANAGER
+	Start: 2026-04-01
+	End: NULL
+}
+
+User4 = {
+	Name: Sebastian Speer
+	Property: UNT
+	Scope: PROPERTY_MANAGER
+	Start: 2026-04-01
+	End: NULL
+}
+
+User5 = {
+	Name: John Slaughter
+	Property: UNT
+	Scope: PROPERTY_MANAGER
+	Start: 2026-04-01
+	End: NULL
+}

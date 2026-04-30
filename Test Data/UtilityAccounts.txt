@@ -1,0 +1,13 @@
+Account1 = {
+	Name: UNT 1
+	Type: ELECTRIC
+	Company: UNT Power
+	Status: ACTIVE
+}
+
+Account2 = {
+	Name: UNT 2
+	Type: WATER
+	Company: UNT Water
+	Status: ACTIVE
+}

@@ -1,0 +1,9 @@
+Property1 = {
+	Name: UNT
+	Entity: Power Team
+	Address: 2345 Express Lane
+	City: Frisco
+	State: Texas
+	ZIP: 75033
+	Status: ACTIVE
+}

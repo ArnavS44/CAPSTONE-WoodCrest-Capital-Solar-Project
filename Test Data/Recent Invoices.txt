@@ -1,0 +1,79 @@
+Invoice1 = {
+	Number: 214124123413
+	Tenant: John Slaughter
+	Date: 2026-04-25
+	Amount: 250.00
+	Status: DRAFT
+}
+
+Invoice2 = {
+	Number: 23423425
+	Tenant: John Slaughter
+	Date: 2026-04-28
+	Amount: 543.00
+	Status: SENT
+}
+
+Invoice3 = {
+	Number: 1121211
+	Tenant: Sebastian Speer
+	Date: 2026-04-25
+	Amount: 250.00
+	Status: SENT
+}
+
+Invoice4 = {
+	Number: 3453453
+	Tenant: Sebastian Speer
+	Date: 2026-04-28
+	Amount: 232.00
+	Status: SENT
+}
+
+Invoice5 = {
+	Number: 111111
+	Tenant: Antonio Gonzalez
+	Date: 2026-04-25
+	Amount: 250.00
+	Status: SENT
+}
+
+Invoice6 = {
+	Number: 3423423
+	Tenant: Antonio Gonzalez
+	Date: 2026-04-28
+	Amount: 359.00
+	Status: SENT
+}
+
+Invoice7 = {
+	Number: 1121211
+	Tenant: Matthew Best
+	Date: 2026-04-25
+	Amount: 250.00
+	Status: DRAFT
+}
+
+Invoice8 = {
+	Number: 12121
+	Tenant: Matthew Best
+	Date: 2026-04-28
+	Amount: 365.00
+	Status: CONFIRMED
+}
+
+Invoice9 = {
+	Number: 1231231312
+	Tenant: Arnav Saxena
+	Date: 2026-04-25
+	Amount: 250.00
+	Status: SENT
+}
+
+Invoice10 = {
+	Number: 123123
+	Tenant: Arnav Saxena
+	Date: 2026-04-28
+	Amount: 365.00
+	Status: CONFIRMED
+}

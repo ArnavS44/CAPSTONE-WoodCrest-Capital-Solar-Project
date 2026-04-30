@@ -1,0 +1,34 @@
+Suite1 = {
+	Property: UNT
+	Num: 101
+	SqFt: 2500
+	Status: OCCUPIED
+}
+
+Suite2 = {
+	Property: UNT
+	Num: 102
+	SqFt: 3000
+	Status: OCCUPIED
+}
+
+Suite3 = {
+	Property: UNT
+	Num: 103
+	SqFt: 2000
+	Status: OCCUPIED
+}
+
+Suite4 = {
+	Property: UNT
+	Num: 104
+	SqFt: 2500
+	Status: OCCUPIED
+}
+
+Suite5 = {
+	Property: UNT
+	Num: 105
+	SqFt: 3600
+	Status: OCCUPIED
+}

@@ -1,0 +1,39 @@
+Tenant1 = {
+	Name: Matthew Best
+	Property: UNT
+	Suite: 101
+	Start: 2026-04-01
+	End: NULL
+}
+
+Tenant2 = {
+	Name: Arnav Saxena
+	Property: UNT
+	Suite: 102
+	Start: 2026-04-01
+	End: NULL
+}
+
+Tenant3 = {
+	Name: Antonio Gonzalez
+	Property: UNT
+	Suite: 103
+	Start: 2026-04-01
+	End: NULL
+}
+
+Tenant4 = {
+	Name: Sebastian Speer
+	Property: UNT
+	Suite: 104
+	Start: 2026-04-01
+	End: NULL
+}
+
+Tenant5 = {
+	Name: John Slaughter
+	Property: UNT
+	Suite: 105
+	Start: 2026-04-01
+	End: NULL
+}
