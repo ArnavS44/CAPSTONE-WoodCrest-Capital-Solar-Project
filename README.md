@@ -2,6 +2,12 @@
 
 WoodCrest Capital is planning on developing a web application that connects to an internal database. The web application would have different purposes for WoodCrest staff and for tenants at their locations.
 
+Tenants would be able to view their utilities data regarding the property suite associated with them. 
+
+Property managers would be able to manage the utilities, tenants, and suites associated with the properties that they have been tasked with managing.
+
+WoodCrest admins would be able to manage users, assign properties to property managers, and manage the site at large.
+
 # Team Members
 
 - Arnav Saxena
