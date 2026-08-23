@@ -1,0 +1,42 @@
+Reading1 = {
+	Meter: 111
+	Date: 2026-04-01
+	Usage: 500.0000
+	Unit: kWh
+}
+
+Reading2 = {
+	Meter: 111
+	Date: 2026-04-25
+	Usage: 1100.0000
+	Unit: kWh
+}
+
+Reading3 = {
+	Meter: 111
+	Date: 2026-04-28
+	Usage: 1100.0000
+	Unit: kWh
+}
+
+Reading4 = {
+	Meter: 112
+	Date: 2026-04-01
+	Usage: 1100.0000
+	Unit: gallon
+}
+
+Reading5 = {
+	Meter: 112
+	Date: 2026-04-25
+	Usage: 1600.0000
+	Unit: gallon
+}
+
+Reading6 = {
+	Meter: 112
+	Date: 2026-04-28
+	Usage: 1800.0000
+	Unit: gallon
+}
+

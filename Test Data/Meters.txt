@@ -1,0 +1,17 @@
+Meter1 = {
+	Name: 111
+	Property: UNT
+	Account: UNT 1
+	Type: MASTER
+	Utility: ELECTRIC
+	Status: ACTIVE
+}
+
+Meter2 = {
+	Name: 112
+	Property: UNT
+	Account: UNT 2
+	Type: MASTER
+	Utility: WATER
+	Status: ACTIVE
+}

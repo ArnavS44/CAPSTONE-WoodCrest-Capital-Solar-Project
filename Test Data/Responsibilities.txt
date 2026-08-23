@@ -1,0 +1,99 @@
+Responsibility1 = {
+	Meter: 111
+	Account: UNT 1
+	Tenant: John Slaughter
+	Suite: 105
+	Party_Type: Tenant
+	Allocation: FIXED_PERCENTAGE
+	Billing_model: PASS_THROUGH
+}
+
+Responsibility2 = {
+	Meter: 112
+	Account: UNT 2
+	Tenant: John Slaughter
+	Suite: 105
+	Party_Type: Tenant
+	Allocation: FIXED_PERCENTAGE
+	Billing_model: PASS_THROUGH
+}
+
+Responsibility3 = {
+	Meter: 111
+	Account: UNT 1
+	Tenant: Sebastian Speer
+	Suite: 104
+	Party_Type: Tenant
+	Allocation: FIXED_PERCENTAGE
+	Billing_model: PASS_THROUGH
+}
+
+Responsibility4 = {
+	Meter: 112
+	Account: UNT 2
+	Tenant: Sebastian Speer
+	Suite: 104
+	Party_Type: Tenant
+	Allocation: FIXED_PERCENTAGE
+	Billing_model: PASS_THROUGH
+}
+
+Responsibility5 = {
+	Meter: 111
+	Account: UNT 1
+	Tenant: Antonio Gonzalez
+	Suite: 103
+	Party_Type: Tenant
+	Allocation: FIXED_PERCENTAGE
+	Billing_model: PASS_THROUGH
+}
+
+Responsibility6 = {
+	Meter: 112
+	Account: UNT 2
+	Tenant: Antonio Gonzalez
+	Suite: 103
+	Party_Type: Tenant
+	Allocation: FIXED_PERCENTAGE
+	Billing_model: PASS_THROUGH
+}
+
+Responsibility7 = {
+	Meter: 111
+	Account: UNT 1
+	Tenant: Arnav Saxena
+	Suite: 102
+	Party_Type: Tenant
+	Allocation: FIXED_PERCENTAGE
+	Billing_model: PASS_THROUGH
+}
+
+Responsibility8 = {
+	Meter: 112
+	Account: UNT 2
+	Tenant: Arnav Saxena
+	Suite: 102
+	Party_Type: Tenant
+	Allocation: FIXED_PERCENTAGE
+	Billing_model: PASS_THROUGH
+}
+
+Responsibility9 = {
+	Meter: 111
+	Account: UNT 1
+	Tenant: Matthew Best
+	Suite: 101
+	Party_Type: Tenant
+	Allocation: FIXED_PERCENTAGE
+	Billing_model: PASS_THROUGH
+}
+
+Responsibility10 = {
+	Meter: 112
+	Account: UNT 2
+	Tenant: Matthew Best
+	Suite: 101
+	Party_Type: Tenant
+	Allocation: FIXED_PERCENTAGE
+	Billing_model: PASS_THROUGH
+}
