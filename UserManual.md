@@ -57,9 +57,9 @@ Access “Invoice” as a property manager or "My Invoices" as a tenant.
 ---
 
 ## 7. Contact Information
-- **Support Email:**[contact Email]
-- **Website:**[Optional]
-- ** Project Repository:**[GitHub/GitLab Link]
+- **Support Email:**[jslaughter0333@gmail.com]
+- **Website:**[(https://billbacks.woodcrestmanagement.com/login_test/)]
+- ** Project Repository:**[[GitHub/GitLab Link](https://github.com/ArnavS44/CAPSTONE-WoodCrest-Capital-Solar-Project/tree/main)]
 - **Other Support Channels:** [Optional]
 ## 8. FAQ (Optional – Extra Credit)
 **Q:** Why are invoice drafts produced?
