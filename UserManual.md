@@ -48,7 +48,7 @@ This feature utilizes the given data on triple net and utilities to determine th
 Access “Invoice” as a property manager or "My Invoices" as a tenant.
 
 ![See Invoice](images/InvoiceDraft.png)
-![“My Invoices”](iames/TenantView.png)
+![“My Invoices”](images/TenantView.png)
 
 ---
 ## 6. Troubleshooting examples
