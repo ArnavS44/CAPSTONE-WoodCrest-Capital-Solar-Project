@@ -35,7 +35,7 @@ This feature allows property managers to set the property insurance, property ta
 Access “Triple Net” to see the triple net history and to set the rates for current and future years.
 ### Feature 4: Invoice Drafts
 This feature utilizes the given data on triple net and utilities to determine the monthly combined charges that each tenant would receive from the owner of the property that they’re renting out of. This creates a draft that both the tenant and property managers should be able to view and understand how the charge was determined. Creating the actual invoice is out of scope, this is merely a drafted version that should show an identical cost. ![See Invoice](images/InvoiceDraft.png).
-Access “Invoice” as a property manager or “My Invoices” as a tenant.
+Access “Invoice” as a property manager or ![“My Invoices”](iames/TenantView.png) as a tenant.
 ---
 ## 6. Troubleshooting examples
 | Page unavailable | Page is blocked until full release | Wait for full release |
