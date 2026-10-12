@@ -24,18 +24,32 @@ Click Sign in
 ---
 ## 5. Features & Functions
 ### Feature 1: Property Management
-This feature allows users with administrative privilege to create properties within the webpage’s database and all of the associative suites and utility meters that are needed for a property management firm to track the associated data with tenants should they lease out spaces within a property. ![See Add Property](images/AddProperty.png) and  ![Assign Property Manager](images/AssignPM.png).
-Access the “create property” function within the Admin User Page.
+This feature allows users with administrative privilege to create properties within the webpage’s database and all of the associative suites and utility meters that are needed for a property management firm to track the associated data with tenants should they lease out spaces within a property. 
+Access the “create property” function within the Admin User Page. 
+
+![See Add Property](images/AddProperty.png)  
+![Assign Property Manager](images/AssignPM.png).
 
 ### Feature 2: Utility Management
-This feature allows assigned property managers to track the utility usages and costs at individual properties. They can see the readings and time of readings for every electricity and water meter at a given property, alongside who is responsible for that water and power usage. They can add reading data, along with associating given suites with ![meters](images/Meters&Utilities.png). Tenants can see the utility usage data associated with their own ![suite](images/TenantView.png).
+This feature allows assigned property managers to track the utility usages and costs at individual properties. They can see the readings and time of readings for every electricity and water meter at a given property, alongside who is responsible for that water and power usage. They can add reading data, along with associating given suites with meters. Tenants can see the utility usage data associated with their own suite.
 Access “Meters & Utilities” to manage the meters themselves, access “Utility Usage” to manage access the meter readings.
+
+![meters](images/Meters&Utilities.png)
+![suite](images/TenantView.png)
+
 ### Feature 3: Triple Net
-This feature allows property managers to set the property insurance, property tax, and common areas maintenance costs associated with a given property for the year. This system will then calculate how that cost is distributed between the property owner and their various tenants. ![See Triple Net](images/TripleN.png).
+This feature allows property managers to set the property insurance, property tax, and common areas maintenance costs associated with a given property for the year. This system will then calculate how that cost is distributed between the property owner and their various tenants.
 Access “Triple Net” to see the triple net history and to set the rates for current and future years.
+
+![See Triple Net](images/TripleN.png)
+
 ### Feature 4: Invoice Drafts
-This feature utilizes the given data on triple net and utilities to determine the monthly combined charges that each tenant would receive from the owner of the property that they’re renting out of. This creates a draft that both the tenant and property managers should be able to view and understand how the charge was determined. Creating the actual invoice is out of scope, this is merely a drafted version that should show an identical cost. ![See Invoice](images/InvoiceDraft.png).
-Access “Invoice” as a property manager or ![“My Invoices”](iames/TenantView.png) as a tenant.
+This feature utilizes the given data on triple net and utilities to determine the monthly combined charges that each tenant would receive from the owner of the property that they’re renting out of. This creates a draft that both the tenant and property managers should be able to view and understand how the charge was determined. Creating the actual invoice is out of scope, this is merely a drafted version that should show an identical cost.
+Access “Invoice” as a property manager or "My Invoices" as a tenant.
+
+![See Invoice](images/InvoiceDraft.png)
+![“My Invoices”](iames/TenantView.png)
+
 ---
 ## 6. Troubleshooting examples
 | Page unavailable | Page is blocked until full release | Wait for full release |
