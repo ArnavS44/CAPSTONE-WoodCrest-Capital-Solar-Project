@@ -933,3 +933,168 @@ body {
 .woodcrest-manager-page .woodcrest-table-wrap::-webkit-scrollbar-thumb:hover {
     background: rgba(34, 197, 94, 0.4) !important;
 }
+
+/*scoped admin portal shortcode seperate from divi builder*/
+.woodcrest-user-directory-container .woodcrest-header-box { 
+    background-color: #7f1d1d !important;
+    border-color: #b91c1c !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 20px rgba(185, 28, 28, 0.3) !important;
+}
+
+.woodcrest-user-directory-container .woodcrest-header-badge {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.woodcrest-user-directory-container .woodcrest-header-badge::after {
+    content: "";
+    position: absolute;
+    left: 100%; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 75px; 
+    height: 80px;
+    margin-left: 0px; 
+    background-image: url(https://billbacks.woodcrestmanagement.com/wp-content/uploads/2026/04/Support-Admin-icon-Graphics-43209390-1-1501705243-scaled.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1); 
+    mix-blend-mode: screen; 
+}
+
+.woodcrest-user-directory-container .woodcrest-table, 
+.woodcrest-user-directory-container .widefat,
+.woodcrest-user-directory-container .woodcrest-card {
+    background: rgba(255, 255, 255, 0.07) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.woodcrest-user-directory-container .woodcrest-table thead, 
+.woodcrest-user-directory-container .widefat thead {
+    background: rgba(185, 28, 28, 0.4) !important;
+}
+
+.woodcrest-user-directory-container .woodcrest-table th, 
+.woodcrest-user-directory-container .widefat th {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    border-bottom: 2px solid rgba(185, 28, 28, 0.3) !important;
+    background: transparent !important;
+}
+
+.woodcrest-user-directory-container h2, 
+.woodcrest-user-directory-container .et_pb_text_inner h2,
+.all-system-users-title {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.woodcrest-user-directory-container .woodcrest-table td, 
+.woodcrest-user-directory-container .widefat td {
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.woodcrest-user-directory-container .woodcrest-table tbody tr:hover {
+    background: rgba(185, 28, 28, 0.1) !important;
+}
+
+.woodcrest-user-directory-container .woodcrest-search-input {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(185, 28, 28, 0.4) !important;
+}
+
+.woodcrest-user-directory-container .woodcrest-search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/*scoped tenant shortcode separate from divi builder*/
+.woodcrest-tenant-portal .woodcrest-header-box { 
+    background-color: #0f172a !important; 
+}
+
+.woodcrest-tenant-portal .woodcrest-card, 
+.woodcrest-tenant-portal .woodcrest-stat-card, 
+.woodcrest-tenant-portal .woodcrest-manager-action-card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-stat-label, 
+.woodcrest-tenant-portal .woodcrest-stat-value {
+    color: #ffffff !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-stat-card::before {
+    background: linear-gradient(90deg, #0f172a, #1e3a8a) !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-header-badge {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-header-badge::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px; 
+    height: 80px;
+    margin-left: 0px;
+    background-image: url(https://billbacks.woodcrestmanagement.com/wp-content/uploads/2026/04/tenants-and-house-line-icon-vector-4269638992.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1); 
+    mix-blend-mode: screen; 
+}
+
+.woodcrest-tenant-portal .woodcrest-card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-card-header h2, 
+.woodcrest-tenant-portal h3 {
+    color: #ffffff !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-table, 
+.woodcrest-tenant-portal .widefat {
+    background-color: transparent !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-table thead, 
+.woodcrest-tenant-portal .widefat thead {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-table th, 
+.woodcrest-tenant-portal .widefat th {
+    color: #94a3b8 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-table td, 
+.woodcrest-tenant-portal .widefat td {
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-table tbody tr:hover, 
+.woodcrest-tenant-portal .widefat tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.woodcrest-tenant-portal .woodcrest-filter-row select, 
+.woodcrest-tenant-portal .woodcrest-meter-form select {
+    background-color: #0f172a !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
