@@ -534,10 +534,9 @@ body {
 }
 
 .woodcrest-manager-action-card:hover {
-    transform: translateY(-2px);
-    background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%);
-    box-shadow: 0 14px 28px rgba(37, 99, 235, 0.22);
-    color: #ffffff;
+    background: linear-gradient(180deg, #16a34a 0%, #15803d 100%) !important;
+    box-shadow: 0 14px 28px rgba(22, 163, 74, 0.22) !important;
+    color: #ffffff !important;
 }
 
 .woodcrest-manager-action-number {
@@ -815,4 +814,122 @@ body {
     box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
 }
 
+/*property manager shortcode separate from divi builder*/
+.woodcrest-manager-page .woodcrest-header-box { 
+    background-color: #061f1a !important;
+    border-color: #0d2e27 !important; 
+}
 
+.woodcrest-manager-page .woodcrest-header-badge.manager {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.woodcrest-manager-page .woodcrest-header-badge.manager::after {
+    content: "";
+    position: absolute;
+    left: 100%; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 55px;
+    height: 60px;
+    margin-left: 10px;
+    background-image: url(https://billbacks.woodcrestmanagement.com/wp-content/uploads/2026/04/property-management-icon-line-illustration-vector-3904201323.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1); 
+    mix-blend-mode: screen; 
+}
+
+.woodcrest-manager-page .woodcrest-table, 
+.woodcrest-manager-page .widefat,
+.woodcrest-manager-page .woodcrest-card,
+.woodcrest-manager-page .woodcrest-manager-manage-grid {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.woodcrest-manager-page .woodcrest-table thead, 
+.woodcrest-manager-page .widefat thead {
+    background: rgba(34, 197, 94, 0.1) !important;
+}
+
+.woodcrest-manager-page .woodcrest-table th, 
+.woodcrest-manager-page .widefat th {
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background: transparent !important;
+}
+
+.woodcrest-manager-page .woodcrest-table td, 
+.woodcrest-manager-page .widefat td,
+.woodcrest-manager-page .woodcrest-mini-stat strong,
+.woodcrest-manager-page .woodcrest-card-header h2,
+.woodcrest-manager-page .woodcrest-tenant-portal h3 {
+    color: #ffffff !important;
+}
+
+.woodcrest-manager-page .woodcrest-mini-stat {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.woodcrest-manager-page .woodcrest-mini-stat span {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.woodcrest-manager-page .woodcrest-table tbody tr:hover {
+    background: rgba(34, 197, 94, 0.1) !important;
+}
+
+.woodcrest-manager-page .woodcrest-table-wrap {
+    background: transparent !important;
+    border: none !important;
+}
+
+.woodcrest-manager-page .woodcrest-filter-row select, 
+.woodcrest-manager-page .woodcrest-meter-form select {
+    background: #052e16 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.woodcrest-manager-page input[type="search"],
+.woodcrest-manager-page input[type="text"],
+.woodcrest-manager-page .dataTables_filter input,
+.woodcrest-manager-page .woodcrest-filter-row input {
+    background: #052e16 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+}
+
+.woodcrest-manager-page input[type="search"]::placeholder,
+.woodcrest-manager-page input[type="text"]::placeholder,
+.woodcrest-manager-page .dataTables_filter input::placeholder,
+.woodcrest-manager-page .woodcrest-filter-row input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.woodcrest-manager-page .woodcrest-table-wrap::-webkit-scrollbar {
+    height: 10px !important;
+    background: transparent !important;
+}
+
+.woodcrest-manager-page .woodcrest-table-wrap::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px !important;
+}
+
+.woodcrest-manager-page .woodcrest-table-wrap::-webkit-scrollbar-thumb {
+    background: rgba(34, 197, 94, 0.2) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.woodcrest-manager-page .woodcrest-table-wrap::-webkit-scrollbar-thumb:hover {
+    background: rgba(34, 197, 94, 0.4) !important;
+}
