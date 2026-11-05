@@ -1,0 +1,252 @@
+
+.woodcrest-header-box.wc-role-tenant,
+.wc-role-tenant .woodcrest-header-box {
+    background: var(--wc-role-header-bg) !important;
+    --wc-header-glow-rgb: var(--wc-master-glow-rgb);
+    border-color: rgba(var(--wc-master-header-border-rgb),.32);
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.34),
+        inset 0 0 0 1px rgba(var(--wc-master-header-border-rgb),.28),
+        inset 0 0 28px rgba(var(--wc-master-glow-rgb),.12);
+}
+
+.wc-role-tenant .woodcrest-header-badge,
+.woodcrest-header-box.wc-role-tenant .woodcrest-header-badge {
+    background: var(--wc-master-accent-strong);
+}
+
+.wc-role-tenant.woodcrest-card,
+.wc-role-tenant .woodcrest-card,
+.wc-role-tenant.woodcrest-stat-card,
+.wc-role-tenant .woodcrest-stat-card {
+    border-color: var(--wc-mode-border, rgba(37,99,235,.25));
+    background: var(--wc-mode-panel, #ffffff);
+}
+
+.wc-role-tenant .woodcrest-table,
+.wc-role-tenant .widefat,
+.wc-role-tenant.woodcrest-card .woodcrest-table {
+    background: var(--wc-role-table-base) !important;
+    color: var(--wc-role-table-text) !important;
+    border-color: var(--wc-role-table-border) !important;
+}
+
+.wc-role-tenant .woodcrest-table thead,
+.wc-role-tenant .widefat thead,
+.wc-role-tenant.woodcrest-card .woodcrest-table thead {
+    background: var(--wc-role-table-head) !important;
+}
+
+.wc-role-tenant .woodcrest-table th,
+.wc-role-tenant .widefat th,
+.wc-role-tenant.woodcrest-card .woodcrest-table th {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border-bottom-color: var(--wc-role-table-border) !important;
+}
+
+.wc-role-tenant .woodcrest-table td,
+.wc-role-tenant .widefat td,
+.wc-role-tenant.woodcrest-card .woodcrest-table td {
+    color: var(--wc-role-table-text) !important;
+    border-bottom-color: var(--wc-role-table-border) !important;
+}
+
+.wc-role-tenant .woodcrest-table tbody tr:nth-child(odd),
+.wc-role-tenant .widefat tbody tr:nth-child(odd) {
+    background: var(--wc-role-table-base) !important;
+}
+.wc-role-tenant .woodcrest-table tbody tr:nth-child(even),
+.wc-role-tenant .widefat tbody tr:nth-child(even) {
+    background: var(--wc-role-table-alt) !important;
+}
+.wc-role-tenant .woodcrest-table tbody tr:hover,
+.wc-role-tenant .widefat tbody tr:hover {
+    background: var(--wc-role-table-hover) !important;
+}
+
+.wc-role-tenant .woodcrest-table a,
+.wc-role-tenant .widefat a {
+    color: #FFFFFF !important;
+}
+.wc-role-tenant .woodcrest-table small,
+.wc-role-tenant .widefat small {
+    color: var(--wc-role-table-muted) !important;
+}
+.wc-role-tenant .woodcrest-table .amount-cell,
+.wc-role-tenant .widefat .amount-cell {
+    color: #FFFFFF !important;
+}
+.wc-role-tenant .woodcrest-table a:hover,
+.wc-role-tenant .widefat a:hover {
+    color: var(--wc-role-table-link) !important;
+}
+
+
+
+.wc-role-tenant .woodcrest-meter-form,
+.wc-role-tenant .woodcrest-filter-row,
+.wc-role-tenant .woodcrest-fe-form {
+    background: var(--wc-role-form-bg) !important;
+    color: var(--wc-role-form-text) !important;
+    border: 1px solid var(--wc-role-form-border) !important;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+.wc-role-tenant .woodcrest-meter-form label,
+.wc-role-tenant .woodcrest-filter-row label,
+.wc-role-tenant .woodcrest-fe-form label {
+    color: var(--wc-role-form-text) !important;
+}
+.wc-role-tenant .woodcrest-meter-form select,
+.wc-role-tenant .woodcrest-filter-row select,
+.wc-role-tenant .woodcrest-fe-field input,
+.wc-role-tenant .woodcrest-fe-field select,
+.wc-role-tenant .woodcrest-fe-field textarea,
+.wc-role-tenant .wc-search-select-trigger,
+.wc-role-tenant .woodcrest-fe-static-value {
+    background: var(--wc-role-form-control) !important;
+    color: var(--wc-role-form-text) !important;
+    border-color: var(--wc-role-form-border) !important;
+}
+.wc-role-tenant input::placeholder,
+.wc-role-tenant textarea::placeholder {
+    color: var(--wc-role-form-muted) !important;
+    opacity: .78;
+}
+.wc-role-tenant .woodcrest-meter-form select:focus,
+.wc-role-tenant .woodcrest-filter-row select:focus,
+.wc-role-tenant .woodcrest-fe-field input:focus,
+.wc-role-tenant .woodcrest-fe-field select:focus,
+.wc-role-tenant .woodcrest-fe-field textarea:focus,
+.wc-role-tenant .wc-search-select-trigger:focus,
+.wc-role-tenant .wc-search-select.is-open .wc-search-select-trigger {
+    border-color: var(--wc-role-form-focus) !important;
+    outline: 2px solid var(--wc-role-form-focus) !important;
+}
+.wc-role-tenant .woodcrest-fe-button {
+    background: var(--wc-role-table-head) !important;
+    color: #fff !important;
+    border: 1px solid var(--wc-role-form-border) !important;
+}
+.wc-role-tenant .woodcrest-fe-button:hover {
+    background: var(--wc-role-table-hover) !important;
+}
+.wc-role-tenant .wc-search-select-dropdown {
+    background: var(--wc-role-form-surface) !important;
+    border-color: var(--wc-role-form-border) !important;
+    color: var(--wc-role-form-text) !important;
+}
+.wc-role-tenant .wc-search-select-input,
+.wc-role-tenant .wc-search-select-option {
+    background: var(--wc-role-form-surface) !important;
+    color: var(--wc-role-form-text) !important;
+    border-color: var(--wc-role-form-border) !important;
+}
+.wc-role-tenant .wc-search-select-option:hover,
+.wc-role-tenant .wc-search-select-option:focus,
+.wc-role-tenant .wc-search-select-option.is-selected {
+    background: var(--wc-role-table-hover) !important;
+}
+.wc-role-tenant .wc-search-select-empty,
+.wc-role-tenant .wc-search-select:not(.has-value) .wc-search-select-trigger-text,
+.wc-role-tenant .wc-search-select-arrow {
+    color: var(--wc-role-form-muted) !important;
+}
+.wc-role-tenant select option {
+    background: var(--wc-role-form-control);
+    color: #fff;
+}
+
+
+.woodcrest-tenant-meter-overview {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 12px 0 14px;
+}
+
+.woodcrest-tenant-meter-detail {
+    min-width: 0;
+    min-height: 74px;
+    padding: 11px 13px;
+    border: 1px solid var(--wc-mode-border, rgba(37,99,235,.25));
+    border-radius: 11px;
+    background: var(--wc-mode-panel-soft, #eef4ff);
+    color: var(--wc-mode-text, #111827);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.woodcrest-tenant-meter-detail-label {
+    display: block;
+    color: var(--wc-mode-muted, #526078);
+    font-size: .72rem;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: .035em;
+    text-transform: uppercase;
+}
+
+.woodcrest-tenant-meter-detail-value {
+    display: block;
+    min-width: 0;
+    color: var(--wc-mode-text, #111827);
+    font-size: .98rem;
+    font-weight: 700;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.woodcrest-tenant-meter-select-form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.woodcrest-tenant-meter-select-form select {
+    width: 100%;
+    min-width: 0;
+    height: 34px;
+    margin: 0;
+    padding: 3px 30px 3px 0;
+    border: 0 !important;
+    border-radius: 0;
+    outline: 0;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    color: var(--wc-mode-text, #111827) !important;
+    font: inherit;
+    font-size: .98rem;
+    font-weight: 700;
+    line-height: 1.25;
+    cursor: pointer;
+}
+
+.woodcrest-tenant-meter-select-form select:focus {
+    outline: 2px solid var(--wc-role-form-focus, currentColor) !important;
+    outline-offset: 3px;
+}
+
+.woodcrest-tenant-meter-select-form select option {
+    background: var(--wc-role-form-control, #fff);
+    color: var(--wc-role-form-text, #111827);
+}
+
+@media (max-width: 680px) {
+    .woodcrest-tenant-meter-overview {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .woodcrest-tenant-meter-detail {
+        min-height: 62px;
+    }
+}

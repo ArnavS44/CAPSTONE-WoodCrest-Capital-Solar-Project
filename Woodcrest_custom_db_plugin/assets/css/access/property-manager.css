@@ -1,0 +1,367 @@
+
+
+.woodcrest-header-box.wc-role-manager,
+.wc-role-manager .woodcrest-header-box {
+    background: var(--wc-role-header-bg) !important;
+    --wc-header-glow-rgb: var(--wc-master-glow-rgb);
+    border-color: rgba(var(--wc-master-header-border-rgb), .32);
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.34),
+        inset 0 0 0 1px rgba(var(--wc-master-header-border-rgb),.28),
+        inset 0 0 28px rgba(var(--wc-master-glow-rgb),.13);
+}
+
+.woodcrest-header-badge.manager {
+    background: var(--wc-master-accent-strong);
+}
+
+
+.woodcrest-manager-panel,
+.wc-role-manager-content .woodcrest-card,
+.wc-role-manager-content .woodcrest-fe-card,
+.wc-role-manager-content .wc-tn-card {
+    border-color: var(--wc-mode-border, rgba(39,134,75,.28)) !important;
+    background: var(--wc-mode-panel, #ffffff);
+}
+
+
+.wc-role-manager-content .woodcrest-table,
+.wc-role-manager-content .woodcrest-fe-table,
+.wc-role-manager-content .wc-tn-table,
+.woodcrest-manager-panel .woodcrest-table,
+.woodcrest-manager-page .woodcrest-table {
+    background: var(--wc-role-table-base) !important;
+    color: var(--wc-role-table-text) !important;
+    border-color: var(--wc-role-table-border) !important;
+}
+
+.wc-role-manager-content .woodcrest-table thead,
+.wc-role-manager-content .woodcrest-fe-table thead,
+.wc-role-manager-content .wc-tn-table thead,
+.woodcrest-manager-panel .woodcrest-table thead,
+.woodcrest-manager-page .woodcrest-table thead {
+    background: var(--wc-role-table-head) !important;
+}
+
+.wc-role-manager-content .woodcrest-table th,
+.wc-role-manager-content .woodcrest-fe-table th,
+.wc-role-manager-content .wc-tn-table th,
+.woodcrest-manager-panel .woodcrest-table th,
+.woodcrest-manager-page .woodcrest-table th {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border-bottom-color: var(--wc-role-table-border) !important;
+}
+
+.wc-role-manager-content .woodcrest-table td,
+.wc-role-manager-content .woodcrest-fe-table td,
+.wc-role-manager-content .wc-tn-table td,
+.woodcrest-manager-panel .woodcrest-table td,
+.woodcrest-manager-page .woodcrest-table td {
+    color: var(--wc-role-table-text) !important;
+    border-bottom-color: var(--wc-role-table-border) !important;
+}
+
+.wc-role-manager-content .woodcrest-table tbody tr:nth-child(odd),
+.wc-role-manager-content .woodcrest-fe-table tbody tr:nth-child(odd),
+.wc-role-manager-content .wc-tn-table tbody tr:nth-child(odd),
+.woodcrest-manager-panel .woodcrest-table tbody tr:nth-child(odd),
+.woodcrest-manager-page .woodcrest-table tbody tr:nth-child(odd) {
+    background: var(--wc-role-table-base) !important;
+}
+
+.wc-role-manager-content .woodcrest-table tbody tr:nth-child(even),
+.wc-role-manager-content .woodcrest-fe-table tbody tr:nth-child(even),
+.wc-role-manager-content .wc-tn-table tbody tr:nth-child(even),
+.woodcrest-manager-panel .woodcrest-table tbody tr:nth-child(even),
+.woodcrest-manager-page .woodcrest-table tbody tr:nth-child(even) {
+    background: var(--wc-role-table-alt) !important;
+}
+
+.wc-role-manager-content .woodcrest-table tbody tr:hover,
+.wc-role-manager-content .woodcrest-fe-table tbody tr:hover,
+.wc-role-manager-content .wc-tn-table tbody tr:hover,
+.woodcrest-manager-panel .woodcrest-table tbody tr:hover,
+.woodcrest-manager-page .woodcrest-table tbody tr:hover {
+    background: var(--wc-role-table-hover) !important;
+}
+
+.wc-role-manager-content .woodcrest-table a,
+.wc-role-manager-content .woodcrest-fe-table a,
+.wc-role-manager-content .wc-tn-table a,
+.woodcrest-manager-panel .woodcrest-table a,
+.woodcrest-manager-page .woodcrest-table a {
+    color: #FFFFFF !important;
+}
+
+.wc-role-manager-content .woodcrest-table small,
+.wc-role-manager-content .woodcrest-fe-table small,
+.wc-role-manager-content .wc-tn-table small {
+    color: var(--wc-role-table-muted) !important;
+}
+.wc-role-manager-content .woodcrest-table .amount-cell,
+.wc-role-manager-content .woodcrest-fe-table .amount-cell,
+.woodcrest-manager-panel .woodcrest-table .amount-cell,
+.woodcrest-manager-page .woodcrest-table .amount-cell {
+    color: #FFFFFF !important;
+}
+.wc-role-manager-content .woodcrest-table a:hover,
+.wc-role-manager-content .woodcrest-fe-table a:hover,
+.wc-role-manager-content .wc-tn-table a:hover,
+.woodcrest-manager-panel .woodcrest-table a:hover,
+.woodcrest-manager-page .woodcrest-table a:hover {
+    color: var(--wc-role-table-link) !important;
+}
+
+
+.woodcrest-manager-action-card:hover {
+    background: linear-gradient(180deg, var(--wc-master-accent-strong) 0%, var(--wc-master-header-bg) 100%);
+    box-shadow: 0 14px 28px rgba(var(--wc-master-glow-rgb), .26);
+    color: #ffffff;
+}
+
+
+
+.wc-role-manager-content .woodcrest-fe-form,
+.woodcrest-manager-panel .woodcrest-fe-form,
+.woodcrest-manager-page .woodcrest-fe-form,
+.wc-role-manager-content .wc-tn-form,
+.wc-role-manager-content .wc-tn-inline-form,
+.wc-role-manager-content .wc-tn-adjustments-form,
+.wc-role-manager-content .woodcrest-filter-row,
+.wc-role-manager-content .woodcrest-meter-form {
+    background: var(--wc-role-form-bg) !important;
+    color: var(--wc-role-form-text) !important;
+    border: 1px solid var(--wc-role-form-border) !important;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.wc-role-manager-content .woodcrest-fe-form label,
+.woodcrest-manager-panel .woodcrest-fe-form label,
+.woodcrest-manager-page .woodcrest-fe-form label,
+.wc-role-manager-content .wc-tn-form label,
+.wc-role-manager-content .wc-tn-inline-form label,
+.wc-role-manager-content .woodcrest-filter-row label,
+.wc-role-manager-content .woodcrest-meter-form label,
+.wc-role-manager-content .wc-tn-form h3,
+.wc-role-manager-content .wc-tn-form h4,
+.wc-role-manager-content .wc-tn-form strong {
+    color: var(--wc-role-form-text) !important;
+}
+
+.wc-role-manager-content .woodcrest-fe-field input,
+.wc-role-manager-content .woodcrest-fe-field select,
+.wc-role-manager-content .woodcrest-fe-field textarea,
+.woodcrest-manager-panel .woodcrest-fe-field input,
+.woodcrest-manager-panel .woodcrest-fe-field select,
+.woodcrest-manager-panel .woodcrest-fe-field textarea,
+.woodcrest-manager-page .woodcrest-fe-field input,
+.woodcrest-manager-page .woodcrest-fe-field select,
+.woodcrest-manager-page .woodcrest-fe-field textarea,
+.wc-role-manager-content .wc-tn-field input,
+.wc-role-manager-content .wc-tn-field select,
+.wc-role-manager-content .wc-tn-field textarea,
+.wc-role-manager-content .woodcrest-filter-row select,
+.wc-role-manager-content .woodcrest-meter-form select,
+.wc-role-manager-content .wc-search-select-trigger,
+.wc-role-manager-content .woodcrest-fe-static-value {
+    background: var(--wc-role-form-control) !important;
+    color: var(--wc-role-form-text) !important;
+    border-color: var(--wc-role-form-border) !important;
+}
+
+.wc-role-manager-content input::placeholder,
+.wc-role-manager-content textarea::placeholder,
+.woodcrest-manager-panel input::placeholder,
+.woodcrest-manager-panel textarea::placeholder,
+.woodcrest-manager-page input::placeholder,
+.woodcrest-manager-page textarea::placeholder {
+    color: var(--wc-role-form-muted) !important;
+    opacity: .78;
+}
+
+.wc-role-manager-content .woodcrest-fe-field small,
+.wc-role-manager-content .wc-tn-field small,
+.wc-role-manager-content .wc-tn-inline-form span,
+.wc-role-manager-content .wc-tn-footnote,
+.wc-role-manager-content .woodcrest-fe-static-value,
+.woodcrest-manager-panel .woodcrest-fe-field small,
+.woodcrest-manager-page .woodcrest-fe-field small {
+    color: var(--wc-role-form-muted) !important;
+}
+
+.wc-role-manager-content .woodcrest-fe-field input:focus,
+.wc-role-manager-content .woodcrest-fe-field select:focus,
+.wc-role-manager-content .woodcrest-fe-field textarea:focus,
+.wc-role-manager-content .wc-tn-field input:focus,
+.wc-role-manager-content .wc-tn-field select:focus,
+.wc-role-manager-content .wc-tn-field textarea:focus,
+.wc-role-manager-content .woodcrest-filter-row select:focus,
+.wc-role-manager-content .woodcrest-meter-form select:focus,
+.wc-role-manager-content .wc-search-select-trigger:focus,
+.wc-role-manager-content .wc-search-select.is-open .wc-search-select-trigger {
+    border-color: var(--wc-role-form-focus) !important;
+    outline: 2px solid var(--wc-role-form-focus) !important;
+}
+
+.wc-role-manager-content .woodcrest-fe-button,
+.woodcrest-manager-panel .woodcrest-fe-button,
+.woodcrest-manager-page .woodcrest-fe-button,
+.wc-role-manager-content .wc-tn-button {
+    background: var(--wc-role-table-head) !important;
+    color: #fff !important;
+    border: 1px solid var(--wc-role-form-border) !important;
+}
+.wc-role-manager-content .woodcrest-fe-button:hover,
+.woodcrest-manager-panel .woodcrest-fe-button:hover,
+.woodcrest-manager-page .woodcrest-fe-button:hover,
+.wc-role-manager-content .wc-tn-button:hover {
+    background: var(--wc-role-table-hover) !important;
+    color: #fff !important;
+}
+
+.wc-role-manager-content .woodcrest-fe-button.woodcrest-fe-button-danger,
+.wc-role-manager-content .wc-tn-button-finalize {
+    background: #b91c1c !important;
+    border-color: #ef4444 !important;
+}
+.wc-role-manager-content .woodcrest-fe-button.woodcrest-fe-button-danger:hover,
+.wc-role-manager-content .wc-tn-button-finalize:hover {
+    background: #991b1b !important;
+}
+
+
+.wc-role-manager-content .wc-search-select-dropdown {
+    background: var(--wc-role-form-surface) !important;
+    border-color: var(--wc-role-form-border) !important;
+    color: var(--wc-role-form-text) !important;
+}
+.wc-role-manager-content .wc-search-select-input,
+.wc-role-manager-content .wc-search-select-option {
+    background: var(--wc-role-form-surface) !important;
+    color: var(--wc-role-form-text) !important;
+    border-color: var(--wc-role-form-border) !important;
+}
+.wc-role-manager-content .wc-search-select-option:hover,
+.wc-role-manager-content .wc-search-select-option:focus,
+.wc-role-manager-content .wc-search-select-option.is-selected {
+    background: var(--wc-role-table-hover) !important;
+}
+.wc-role-manager-content .wc-search-select-empty,
+.wc-role-manager-content .wc-search-select:not(.has-value) .wc-search-select-trigger-text,
+.wc-role-manager-content .wc-search-select-arrow {
+    color: var(--wc-role-form-muted) !important;
+}
+
+
+.wc-role-manager-content .wc-tn-checkbox-field,
+.wc-role-manager-content .wc-tn-expense-block,
+.wc-role-manager-content .wc-tn-inline-form,
+.wc-role-manager-content .wc-tn-tenant-adjustment,
+.wc-role-manager-content .wc-tn-charge-card {
+    background: var(--wc-role-form-surface) !important;
+    color: var(--wc-role-form-text) !important;
+    border-color: var(--wc-role-form-border) !important;
+}
+.wc-role-manager-content .wc-tn-tenant-adjustment summary,
+.wc-role-manager-content .wc-tn-tenant-adjustment[open] summary,
+.wc-role-manager-content .wc-tn-final-line,
+.wc-role-manager-content .wc-tn-charge-card.is-fixed,
+.wc-role-manager-content .wc-tn-charge-card.has-adjustment:not(.is-fixed) {
+    background: var(--wc-role-form-control) !important;
+    color: var(--wc-role-form-text) !important;
+    border-color: var(--wc-role-form-border) !important;
+}
+.wc-role-manager-content .wc-tn-calculated-line,
+.wc-role-manager-content .wc-tn-charge-card h4,
+.wc-role-manager-content .wc-tn-final-line strong {
+    color: var(--wc-role-form-text) !important;
+}
+
+
+.wc-role-manager-content .woodcrest-table .woodcrest-fe-form,
+.wc-role-manager-content .woodcrest-fe-table .woodcrest-fe-form,
+.woodcrest-manager-panel .woodcrest-table .woodcrest-fe-form,
+.woodcrest-manager-page .woodcrest-table .woodcrest-fe-form {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.wc-role-manager-content select option,
+.woodcrest-manager-panel select option,
+.woodcrest-manager-page select option {
+    background: var(--wc-role-form-control);
+    color: #fff;
+}
+
+
+
+.woodcrest-header-badge.manager,
+.woodcrest-fe-manager-header .woodcrest-header-badge.manager,
+.woodcrest-header-box.wc-role-manager .woodcrest-header-badge.manager {
+    background: var(--wc-master-accent-bright) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 1px rgba(var(--wc-master-header-border-rgb), .22), 0 0 14px rgba(var(--wc-master-glow-rgb), .18);
+}
+
+.woodcrest-manager-action-card:hover {
+    background: linear-gradient(180deg, var(--wc-master-accent-bright) 0%, var(--wc-master-accent-strong) 100%) !important;
+    box-shadow: 0 14px 30px rgba(var(--wc-master-glow-rgb), .30) !important;
+    color: #ffffff !important;
+}
+
+.woodcrest-manager-action-card.wc-v251-dashboard-card {
+    gap: 4px;
+    width: 100%;
+    max-width: 100%;
+    height: 148px;
+    min-height: 148px;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border: 1px solid var(--wc-mode-border, rgba(74, 150, 106, .28));
+    border-radius: 10px;
+    line-height: 1.25;
+}
+.wc-v251-dashboard-card .wc-v251-card-icon {
+    flex: 0 0 auto;
+    margin-bottom: 4px;
+    color: var(--wc-master-accent-bright, #67b88a);
+}
+.wc-v251-dashboard-card .woodcrest-manager-action-number {
+    font-size: clamp(1.45rem, 2.4vw, 1.9rem);
+    margin: 0;
+}
+.wc-v251-dashboard-card .woodcrest-manager-action-label {
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.wc-v251-dashboard-card .wc-v251-card-caption {
+    font-size: .79rem;
+    font-weight: 500;
+    color: inherit;
+    opacity: .78;
+}
+.wc-v251-dashboard-card:hover .wc-v251-card-icon { color: #fff; }
+.wc-v251-advanced {
+    border: 1px solid var(--wc-role-form-border, var(--wc-mode-border, #59665f));
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px 12px;
+}
+.wc-v251-advanced summary {
+    cursor: pointer;
+    font-size: .92rem;
+    font-weight: 700;
+    color: var(--wc-role-form-text, var(--wc-mode-text, inherit));
+}
+.wc-v251-advanced[open] > summary { margin-bottom: 12px; }
+.woodcrest-fe-form .wc-v251-suite-fields[hidden],
+.woodcrest-fe-form .wc-v251-percent-fields[hidden] { display: none !important; }
+@media(max-width: 620px) {
+    .woodcrest-manager-action-card.wc-v251-dashboard-card { height: 148px; min-height: 148px; padding: 10px 12px; }
+}

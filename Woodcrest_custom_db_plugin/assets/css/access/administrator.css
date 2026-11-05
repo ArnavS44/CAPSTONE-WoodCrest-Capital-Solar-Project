@@ -1,0 +1,175 @@
+
+.wc-role-admin .woodcrest-header-box,
+.woodcrest-header-box.wc-role-admin {
+    background: var(--wc-role-header-bg) !important;
+    --wc-header-glow-rgb: var(--wc-master-glow-rgb);
+    border-color: rgba(var(--wc-master-header-border-rgb),.32);
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.34),
+        inset 0 0 0 1px rgba(var(--wc-master-header-border-rgb),.28),
+        inset 0 0 28px rgba(var(--wc-master-glow-rgb),.12);
+}
+
+.wc-role-admin .woodcrest-header-badge,
+.wc-role-admin .woodcrest-header-badge.admin {
+    background: var(--wc-master-accent-strong) !important;
+}
+
+.wc-role-admin .woodcrest-card {
+    border-color: var(--wc-mode-border, rgba(127,29,29,.28));
+    background: var(--wc-mode-panel, #ffffff);
+}
+
+.wc-role-admin .woodcrest-table,
+.wc-role-admin .woodcrest-fe-table {
+    background: var(--wc-role-table-base) !important;
+    color: var(--wc-role-table-text) !important;
+    border-color: var(--wc-role-table-border) !important;
+}
+
+.wc-role-admin .woodcrest-table thead,
+.wc-role-admin .woodcrest-fe-table thead {
+    background: var(--wc-role-table-head) !important;
+}
+
+.wc-role-admin .woodcrest-table th,
+.wc-role-admin .woodcrest-fe-table th {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border-bottom-color: var(--wc-role-table-border) !important;
+}
+
+.wc-role-admin .woodcrest-table td,
+.wc-role-admin .woodcrest-fe-table td {
+    color: var(--wc-role-table-text) !important;
+    border-bottom-color: var(--wc-role-table-border) !important;
+}
+
+.wc-role-admin .woodcrest-table tbody tr:nth-child(odd),
+.wc-role-admin .woodcrest-fe-table tbody tr:nth-child(odd) {
+    background: var(--wc-role-table-base) !important;
+}
+.wc-role-admin .woodcrest-table tbody tr:nth-child(even),
+.wc-role-admin .woodcrest-fe-table tbody tr:nth-child(even) {
+    background: var(--wc-role-table-alt) !important;
+}
+.wc-role-admin .woodcrest-table tbody tr:hover,
+.wc-role-admin .woodcrest-fe-table tbody tr:hover {
+    background: var(--wc-role-table-hover) !important;
+}
+
+.wc-role-admin .woodcrest-table a,
+.wc-role-admin .woodcrest-fe-table a {
+    color: #FFFFFF !important;
+}
+.wc-role-admin .woodcrest-table small,
+.wc-role-admin .woodcrest-fe-table small {
+    color: var(--wc-role-table-muted) !important;
+}
+.wc-role-admin .woodcrest-table .amount-cell,
+.wc-role-admin .woodcrest-fe-table .amount-cell {
+    color: #FFFFFF !important;
+}
+.wc-role-admin .woodcrest-table a:hover,
+.wc-role-admin .woodcrest-fe-table a:hover {
+    color: var(--wc-role-table-link) !important;
+}
+
+
+
+.wc-role-admin .woodcrest-fe-form,
+.wc-role-admin .woodcrest-filter-row,
+.wc-role-admin .woodcrest-meter-form {
+    background: var(--wc-role-form-bg) !important;
+    color: var(--wc-role-form-text) !important;
+    border: 1px solid var(--wc-role-form-border) !important;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+.wc-role-admin .woodcrest-fe-form label,
+.wc-role-admin .woodcrest-filter-row label,
+.wc-role-admin .woodcrest-meter-form label {
+    color: var(--wc-role-form-text) !important;
+}
+.wc-role-admin .woodcrest-fe-field input,
+.wc-role-admin .woodcrest-fe-field select,
+.wc-role-admin .woodcrest-fe-field textarea,
+.wc-role-admin .woodcrest-filter-row select,
+.wc-role-admin .woodcrest-meter-form select,
+.wc-role-admin .wc-search-select-trigger,
+.wc-role-admin .woodcrest-fe-static-value {
+    background: var(--wc-role-form-control) !important;
+    color: var(--wc-role-form-text) !important;
+    border-color: var(--wc-role-form-border) !important;
+}
+.wc-role-admin input::placeholder,
+.wc-role-admin textarea::placeholder {
+    color: var(--wc-role-form-muted) !important;
+    opacity: .78;
+}
+.wc-role-admin .woodcrest-fe-field small,
+.wc-role-admin .woodcrest-fe-static-value {
+    color: var(--wc-role-form-muted) !important;
+}
+.wc-role-admin .woodcrest-fe-field input:focus,
+.wc-role-admin .woodcrest-fe-field select:focus,
+.wc-role-admin .woodcrest-fe-field textarea:focus,
+.wc-role-admin .woodcrest-filter-row select:focus,
+.wc-role-admin .woodcrest-meter-form select:focus,
+.wc-role-admin .wc-search-select-trigger:focus,
+.wc-role-admin .wc-search-select.is-open .wc-search-select-trigger {
+    border-color: var(--wc-role-form-focus) !important;
+    outline: 2px solid var(--wc-role-form-focus) !important;
+}
+.wc-role-admin .woodcrest-fe-button {
+    background: var(--wc-role-table-head) !important;
+    color: #fff !important;
+    border: 1px solid var(--wc-role-form-border) !important;
+}
+.wc-role-admin .woodcrest-fe-button:hover {
+    background: var(--wc-role-table-hover) !important;
+    color: #fff !important;
+}
+.wc-role-admin .woodcrest-fe-button.woodcrest-fe-button-danger {
+    background: #7f1d1d !important;
+    border-color: #ef4444 !important;
+}
+.wc-role-admin .wc-search-select-dropdown {
+    background: var(--wc-role-form-surface) !important;
+    border-color: var(--wc-role-form-border) !important;
+    color: var(--wc-role-form-text) !important;
+}
+.wc-role-admin .wc-search-select-input,
+.wc-role-admin .wc-search-select-option {
+    background: var(--wc-role-form-surface) !important;
+    color: var(--wc-role-form-text) !important;
+    border-color: var(--wc-role-form-border) !important;
+}
+.wc-role-admin .wc-search-select-option:hover,
+.wc-role-admin .wc-search-select-option:focus,
+.wc-role-admin .wc-search-select-option.is-selected {
+    background: var(--wc-role-table-hover) !important;
+}
+.wc-role-admin .wc-search-select-empty,
+.wc-role-admin .wc-search-select:not(.has-value) .wc-search-select-trigger-text,
+.wc-role-admin .wc-search-select-arrow {
+    color: var(--wc-role-form-muted) !important;
+}
+.wc-role-admin .woodcrest-table .woodcrest-fe-form,
+.wc-role-admin .woodcrest-fe-table .woodcrest-fe-form {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+.wc-role-admin select option {
+    background: var(--wc-role-form-control);
+    color: #fff;
+}
+
+.wc-delete-property { margin-top: 22px; border-top: 1px solid var(--wc-border, rgba(128,128,128,.3)); padding-top: 15px; }
+.wc-delete-property > summary { display: inline-block; cursor: pointer; color: #c62828; border: 1px solid currentColor; border-radius: 8px; padding: 10px 16px; font-weight: 700; }
+.wc-delete-property-confirm { margin-top: 14px; }
+.wc-delete-property-final { background: #b42318 !important; border-color: #b42318 !important; color: #fff !important; }
+.wc-delete-property-final:hover, .wc-delete-property-final:focus { background: #8f1912 !important; }
