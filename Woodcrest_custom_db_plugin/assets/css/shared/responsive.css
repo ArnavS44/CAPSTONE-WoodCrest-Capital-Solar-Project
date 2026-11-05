@@ -1,0 +1,201 @@
+
+
+
+.woodcrest-page,
+.woodcrest-tenant-portal,
+.woodcrest-fe-module,
+.wc-tn-page,
+.woodcrest-card,
+.woodcrest-fe-panel,
+.woodcrest-fe-panel-body,
+.woodcrest-manager-panel,
+.wc-tn-card,
+.woodcrest-grid > *,
+.woodcrest-stats > *,
+.woodcrest-manager-action-grid > * {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+
+.woodcrest-table-wrap,
+.wc-tn-table-wrap {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-inline: contain;
+    box-sizing: border-box;
+}
+
+.woodcrest-table,
+.woodcrest-fe-table,
+.wc-tn-table,
+.woodcrest-tenant-portal .widefat {
+    max-width: none;
+}
+
+
+.woodcrest-table td,
+.woodcrest-fe-table td,
+.wc-tn-table td,
+.woodcrest-tenant-portal .widefat td {
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+}
+
+.woodcrest-card-header {
+    gap: 10px 16px;
+    flex-wrap: wrap;
+}
+
+.woodcrest-fe-field,
+.woodcrest-fe-field input,
+.woodcrest-fe-field select,
+.woodcrest-fe-field textarea,
+.wc-tn-field,
+.wc-tn-field input,
+.wc-tn-field select,
+.wc-tn-field textarea {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .wc-tn-table {
+        min-width: 760px;
+    }
+}
+
+@media (max-width: 760px) {
+    .woodcrest-page,
+    .woodcrest-tenant-portal,
+    .woodcrest-fe-module,
+    .wc-tn-page {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .woodcrest-fe-panel-body {
+        padding: 14px;
+    }
+
+    .woodcrest-fe-form,
+    .wc-tn-form,
+    .wc-tn-selector-form {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    
+    .woodcrest-table,
+    .woodcrest-fe-table,
+    .woodcrest-tenant-portal .widefat {
+        min-width: 620px;
+    }
+
+    .woodcrest-table th,
+    .woodcrest-fe-table th,
+    .woodcrest-tenant-portal .widefat th {
+        white-space: nowrap;
+    }
+
+    .woodcrest-table th,
+    .woodcrest-table td,
+    .woodcrest-fe-table th,
+    .woodcrest-fe-table td,
+    .woodcrest-tenant-portal .widefat th,
+    .woodcrest-tenant-portal .widefat td {
+        padding: 9px 10px;
+    }
+
+    .woodcrest-fe-button,
+    .wc-tn-button {
+        min-height: 42px;
+    }
+}
+
+@media (max-width: 480px) {
+    .woodcrest-card,
+    .woodcrest-stat-card,
+    .wc-tn-card {
+        border-radius: 12px;
+    }
+
+    .woodcrest-fe-panel > summary,
+    .woodcrest-fe-panel-body {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .woodcrest-header-box {
+        padding: 24px 18px;
+    }
+
+    .woodcrest-header-box h1 {
+        font-size: clamp(1.65rem, 8vw, 2.2rem);
+    }
+}
+
+
+@media (max-width: 640px) {
+    .woodcrest-header-box > div {
+        gap: 16px !important;
+    }
+
+    .woodcrest-header-actions {
+        width: auto;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        gap: 4px;
+        margin-left: auto;
+        top: -4px;
+        right: -4px;
+    }
+
+    .woodcrest-header-nav-link {
+        flex: 0 0 auto;
+        min-width: 0;
+        min-height: 28px;
+        padding: 4px 7px;
+        font-size: 0.70rem;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .woodcrest-header-actions .woodcrest-header-nav-link,
+    button.woodcrest-header-nav-link.woodcrest-theme-toggle {
+        width: 68px;
+        min-width: 68px;
+        height: 28px;
+        min-height: 28px;
+        padding: 0 6px;
+    }
+}
+
+.woodcrest-fe-module,.woodcrest-page,.woodcrest-card,.woodcrest-manager-panel,.wc-tn-card,.wc-v24-analytics{min-width:0;box-sizing:border-box}
+.woodcrest-table-wrap,.wc-tn-table-wrap,.wc-v24-table-wrap{max-width:100%;min-width:0;box-sizing:border-box;container:wc-table/inline-size;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch}
+.woodcrest-table-wrap>table:not(.woodcrest-meter-entry-table),.wc-tn-table-wrap>table,.wc-v24-table-wrap>table{width:max-content;min-width:100%;max-width:none;box-sizing:border-box}
+.woodcrest-table-wrap>table.wc-manager-assignment-table,.woodcrest-table-wrap>table.wc-assigned-property-table{min-width:max(100%,560px)}
+.woodcrest-table-wrap>table.wc-assigned-property-info{min-width:max(100%,850px)}
+.wc-table-tools,.wc-table-filters,.wc-tn-toolbar,.wc-v24-analytics-filters{min-width:0;max-width:100%;box-sizing:border-box;flex-wrap:wrap}
+.wc-table-search,.wc-table-search input,.wc-table-filter,.wc-tn-table-search{max-width:100%;box-sizing:border-box}
+@container wc-table (max-width:560px){
+  .woodcrest-table th,.woodcrest-table td,.woodcrest-fe-table th,.woodcrest-fe-table td,.wc-tn-table th,.wc-tn-table td{padding:9px 10px}
+}
+
+.woodcrest-fe-page,.woodcrest-fe-module{width:100%;max-width:100%;box-sizing:border-box}
+.woodcrest-fe-page{margin-inline:auto}
+.woodcrest-fe-module{margin-inline:0}
+@media(min-width:1000px){
+ .woodcrest-utility-workflow-module{width:100%!important;max-width:100%!important;position:static!important;left:auto!important;transform:none!important}
+}
+.woodcrest-meter-batch-card{container:wc-meterbatch/inline-size}
+@container wc-meterbatch (max-width:840px){
+ .woodcrest-utility-form>.woodcrest-table-wrap{width:100%!important;max-width:100%!important;overflow-x:auto!important}
+ .woodcrest-meter-entry-table{min-width:760px!important;width:max(100%,760px)!important;table-layout:auto!important}
+}

@@ -1,0 +1,20 @@
+.wc-property-groups{display:grid;gap:9px;min-width:0}
+.wc-property-group-filters{display:flex;gap:10px;align-items:end;flex-wrap:wrap;margin:8px 0 13px}
+.wc-property-group-filters label{display:grid;gap:5px;font-size:.84rem;font-weight:600;flex:0 1 170px;min-width:135px;color:var(--wc-mode-text,#243047)}
+.wc-property-group-filters label:first-child{flex:1 1 220px}
+.wc-property-group-filters input,.wc-property-group-filters select{width:100%;height:40px;box-sizing:border-box;border-radius:9px;border:1px solid var(--wc-mode-border,#a5adba);background:var(--wc-mode-control,#fff);color:var(--wc-mode-text,#1b2838);padding:7px 10px;font:inherit;font-size:.87rem}
+.wc-property-group{min-width:0;border:1px solid var(--wc-mode-border,#8b949e);background:var(--wc-mode-panel-soft,#f8fafc);border-radius:10px;overflow:clip;color:var(--wc-mode-text,#1b2838)}
+.wc-property-group summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px;padding:13px 15px;min-height:46px;box-sizing:border-box}
+.wc-property-group summary::-webkit-details-marker{display:none}
+.wc-property-group summary strong{flex:1;font-size:.94rem;color:inherit}
+.wc-property-group summary:hover{background:var(--wc-mode-table-hover,rgba(120,120,120,.07))}
+.wc-property-group-chevron{color:var(--wc-role-accent,#2f9e76);font-weight:750;transition:transform .2s}
+.wc-property-group[open] .wc-property-group-chevron{transform:rotate(90deg)}
+.wc-property-group-count{font-size:.8rem;color:var(--wc-mode-muted,#667085);white-space:nowrap}
+.wc-property-group .woodcrest-table-wrap{margin:0;overflow:auto;max-width:100%;border-top:1px solid var(--wc-mode-border,#a5adba)}
+.wc-property-group table{margin:0!important;min-width:620px}
+.wc-property-group tbody tr[hidden]{display:none!important}
+.wc-property-group-empty{margin:12px 0;color:var(--wc-mode-muted,#667085)}
+@media(max-width:480px){.wc-property-group summary{padding:11px}.wc-property-group-filters label{flex:1 1 140px}}
+
+.wc-flash-dismissed{opacity:0;max-height:0!important;overflow:hidden;transition:opacity .25s ease,max-height .25s ease}

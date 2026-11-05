@@ -1,0 +1,926 @@
+
+
+:root {
+    --wc-bg: #f4f7fb;
+    --wc-surface: #ffffff;
+    --wc-surface-soft: #f8fbff;
+    --wc-border: #e5e7eb;
+    --wc-border-soft: #dbeafe;
+    --wc-text: #0f172a;
+    --wc-text-muted: #64748b;
+
+    --wc-accent: #2563eb;
+    --wc-accent-dark: #1d4ed8;
+    --wc-accent-soft: #dbeafe;
+
+    --wc-green: #16a34a;
+    --wc-green-bg: #dcfce7;
+
+    --wc-red: #dc2626;
+    --wc-red-bg: #fee2e2;
+
+    --wc-yellow: #d97706;
+    --wc-yellow-bg: #fef3c7;
+
+    --wc-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    --wc-glow: 0 0 15px rgba(37, 99, 235, 0.15);
+    --wc-radius: 20px;
+}
+
+
+.woodcrest-header-box {
+    background: #111111;
+    padding: 40px;
+    border-radius: var(--wc-radius);
+    margin-bottom: 32px;
+    --wc-header-glow-rgb: 37, 99, 235;
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.4),
+        inset 0 0 0 1px rgba(var(--wc-header-glow-rgb), 0.38),
+        inset 0 0 26px rgba(var(--wc-header-glow-rgb), 0.12);
+    border: 1px solid rgba(var(--wc-header-glow-rgb), 0.38);
+}
+
+.woodcrest-header-box h1 {
+    color: #ffffff !important;
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.woodcrest-header-box p {
+    color: #cbd5e1 !important;
+    margin: 10px 0 0;
+    font-size: 1.1rem;
+}
+
+.woodcrest-header-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--wc-accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.woodcrest-header-badge.manager {
+    background: #16a34a;
+}
+
+
+.woodcrest-card, 
+.woodcrest-stat-card, 
+.woodcrest-mini-stat,
+.woodcrest-manager-action-card {
+    box-shadow: var(--wc-shadow) !important;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.woodcrest-card:hover {
+    box-shadow: 0 15px 45px rgba(0,0,0,0.3) !important;
+}
+
+
+
+
+.woodcrest-page,
+.woodcrest-tenant-portal {
+    max-width: 1240px;
+    margin: 32px auto;
+    padding: 0 20px 48px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--wc-text);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+.woodcrest-hero {
+    margin-bottom: 28px;
+    padding: 8px 0 4px;
+}
+
+.woodcrest-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: var(--wc-accent-soft);
+    color: var(--wc-accent-dark);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.woodcrest-hero h1,
+.woodcrest-tenant-portal h2 {
+    margin: 0;
+    font-size: 2.35rem;
+    line-height: 1.05;
+    font-weight: 750;
+    color: var(--wc-text);
+}
+
+.woodcrest-hero p,
+.woodcrest-tenant-portal p {
+    margin: 8px 0 0;
+    color: var(--wc-text-muted);
+    font-size: 1rem;
+}
+
+
+.woodcrest-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.woodcrest-stat-card {
+    position: relative;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    border: 1px solid var(--wc-border-soft);
+    border-radius: var(--wc-radius);
+    box-shadow: var(--wc-shadow);
+    padding: 22px;
+    overflow: hidden;
+}
+
+.woodcrest-stat-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--wc-accent), #60a5fa);
+}
+
+.woodcrest-stat-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--wc-text-muted);
+    margin-bottom: 12px;
+}
+
+.woodcrest-stat-value,
+.woodcrest-big-number {
+    display: block;
+    font-size: 2.2rem;
+    line-height: 1.05;
+    font-weight: 800;
+    color: var(--wc-text);
+}
+
+
+.woodcrest-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+
+.woodcrest-card,
+.woodcrest-mini-stat {
+    background: var(--wc-surface);
+    border: 1px solid var(--wc-border);
+    border-radius: var(--wc-radius);
+    box-shadow: var(--wc-shadow);
+}
+
+.woodcrest-card {
+    padding: 22px;
+}
+
+.woodcrest-card-wide {
+    width: 100%;
+}
+
+.woodcrest-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.woodcrest-card-header h2,
+.woodcrest-tenant-portal h3 {
+    margin: 0;
+    font-size: 1.28rem;
+    font-weight: 750;
+    color: var(--wc-text);
+}
+
+
+.woodcrest-filter-row,
+.woodcrest-meter-form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.woodcrest-filter-row label,
+.woodcrest-meter-form label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #334155;
+}
+
+.woodcrest-filter-row select,
+.woodcrest-meter-form select {
+    min-width: 340px;
+    padding: 11px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background: #ffffff;
+    color: var(--wc-text);
+    font-size: 0.94rem;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.woodcrest-filter-row select:focus,
+.woodcrest-meter-form select:focus {
+    border-color: var(--wc-accent);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+
+.woodcrest-meter-summary {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.woodcrest-mini-stat {
+    padding: 16px;
+    background: linear-gradient(180deg, #ffffff 0%, #fafcff 100%);
+    border: 1px solid #e2e8f0;
+}
+
+.woodcrest-mini-stat span {
+    display: block;
+    color: var(--wc-text-muted);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.woodcrest-mini-stat strong {
+    display: block;
+    font-size: 1.08rem;
+    font-weight: 750;
+    color: var(--wc-text);
+    line-height: 1.25;
+}
+
+
+.woodcrest-table-wrap {
+    overflow-x: auto;
+    border-radius: 14px;
+}
+
+.woodcrest-table,
+.woodcrest-tenant-portal .widefat {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.woodcrest-table thead,
+.woodcrest-tenant-portal .widefat thead {
+    background: linear-gradient(180deg, #eff6ff 0%, #f8fbff 100%);
+}
+
+.woodcrest-table th,
+.woodcrest-tenant-portal .widefat th {
+    text-align: left;
+    padding: 11px 14px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--wc-text-muted);
+    border-bottom: 1px solid var(--wc-border-soft);
+    white-space: nowrap;
+}
+
+.woodcrest-table td,
+.woodcrest-tenant-portal .widefat td {
+    padding: 12px 14px;
+    font-size: 0.94rem;
+    color: #1f2937;
+    border-bottom: 1px solid #eef2f7;
+    vertical-align: middle;
+}
+
+.woodcrest-table tbody tr,
+.woodcrest-tenant-portal .widefat tbody tr {
+    transition: background 0.18s ease;
+}
+
+.woodcrest-table tbody tr:hover,
+.woodcrest-tenant-portal .widefat tbody tr:hover {
+    background: #f8fbff;
+}
+
+.woodcrest-table tbody tr:last-child td,
+.woodcrest-tenant-portal .widefat tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+.amount-cell {
+    font-weight: 800;
+    color: var(--wc-text);
+}
+
+
+.woodcrest-badge,
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.74rem;
+    font-weight: 800;
+    line-height: 1;
+    white-space: nowrap;
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.status-confirmed {
+    background: var(--wc-green-bg);
+    color: #166534;
+}
+
+.status-draft {
+    background: var(--wc-yellow-bg);
+    color: #92400e;
+}
+
+.status-sent {
+    background: var(--wc-accent-soft);
+    color: var(--wc-accent-dark);
+}
+
+.status-voided {
+    background: var(--wc-red-bg);
+    color: #991b1b;
+}
+
+.status-drafted {
+    background: var(--wc-green-bg);
+    color: #166534;
+}
+
+.status-undrafted {
+    background: var(--wc-yellow-bg);
+    color: #92400e;
+}
+
+
+.change-positive,
+.is-negative {
+    color: var(--wc-red);
+    font-weight: 800;
+}
+
+.change-negative,
+.is-positive {
+    color: var(--wc-green);
+    font-weight: 800;
+}
+
+.change-neutral,
+.is-neutral {
+    color: var(--wc-text-muted);
+    font-weight: 800;
+}
+
+
+.woodcrest-table td strong,
+.woodcrest-mini-stat strong,
+.woodcrest-stat-value {
+    letter-spacing: -0.01em;
+}
+
+
+.woodcrest-card + .woodcrest-card {
+    margin-top: 0;
+}
+
+
+@media (max-width: 1024px) {
+    .woodcrest-meter-summary {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .woodcrest-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .woodcrest-meter-summary {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .woodcrest-hero h1,
+    .woodcrest-tenant-portal h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .woodcrest-page,
+    .woodcrest-tenant-portal {
+        padding: 0 12px 24px;
+        margin: 20px auto;
+    }
+
+    .woodcrest-hero h1,
+    .woodcrest-tenant-portal h2 {
+        font-size: 1.72rem;
+    }
+
+    .woodcrest-meter-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .woodcrest-filter-row select,
+    .woodcrest-meter-form select {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .woodcrest-table th,
+    .woodcrest-table td,
+    .woodcrest-tenant-portal .widefat th,
+    .woodcrest-tenant-portal .widefat td {
+        padding: 10px 10px;
+        font-size: 0.87rem;
+    }
+
+    .woodcrest-stat-value,
+    .woodcrest-big-number {
+        font-size: 1.75rem;
+    }
+
+    .woodcrest-card,
+    .woodcrest-stat-card {
+        padding: 16px;
+    }
+}
+
+
+.woodcrest-manager-page {
+    max-width: 1280px;
+}
+
+.woodcrest-manager-banner {
+    margin-bottom: 20px;
+}
+
+.woodcrest-manager-banner-title {
+    display: inline-block;
+    background: #111111;
+    color: #f8fafc;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    padding: 18px 28px;
+    border-radius: 8px;
+    min-width: 380px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.woodcrest-manager-action-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.woodcrest-manager-action-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    background: linear-gradient(180deg, #2f2f2f 0%, #171717 100%);
+    color: #f8fafc;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.woodcrest-manager-action-card:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%);
+    box-shadow: 0 14px 28px rgba(37, 99, 235, 0.22);
+    color: #ffffff;
+}
+
+.woodcrest-manager-action-number {
+    display: block;
+    font-size: 1.55rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.woodcrest-manager-action-label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+}
+
+.woodcrest-manager-panels {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.woodcrest-manager-panel {
+    min-height: 320px;
+}
+
+.woodcrest-manager-manage-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+@media (max-width: 1024px) {
+    .woodcrest-manager-action-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .woodcrest-manager-panels {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .woodcrest-manager-banner-title {
+        min-width: auto;
+        width: 100%;
+        font-size: 1rem;
+        padding: 16px 18px;
+    }
+
+    .woodcrest-manager-action-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .woodcrest-manager-action-card {
+        min-height: 100px;
+    }
+
+    .woodcrest-manager-manage-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.woodcrest-action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.woodcrest-action-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: var(--wc-accent);
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.woodcrest-action-btn.secondary {
+    background: var(--wc-text);
+}
+
+
+
+.woodcrest-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: min(780px, 85vh);
+    margin-inline: auto;
+    padding: 42px 20px;
+    box-sizing: border-box;
+}
+.woodcrest-login-card {
+    position: relative;
+    width: min(100%, 470px);
+    min-width: 0;
+    margin-inline: auto;
+    padding: clamp(24px, 4vw, 38px);
+    box-sizing: border-box;
+    border: 1px solid var(--wc-login-border, rgba(148,163,184,.35));
+    border-top: 4px solid var(--wc-login-accent, #2563eb);
+    border-radius: 18px;
+    background: var(--wc-login-card, #f8fafc);
+    box-shadow: 0 20px 55px rgba(0,0,0,.15);
+}
+.woodcrest-login-app-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 4px 0 28px;
+    color: var(--wc-login-text, #111827);
+    font-size: clamp(2.1rem, 5vw, 2.7rem);
+    line-height: 1.13;
+    font-weight: 850;
+    text-align: center;
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+}
+.woodcrest-login-app-name .utility-box {
+    display: block;
+    max-width: 100%;
+    padding: 8px 15px;
+    border: 1px solid var(--wc-login-pill-border, #334155);
+    border-radius: 7px;
+    background: var(--wc-login-pill-bg, #172033);
+    color: var(--wc-login-pill-text, #f8fafc);
+    font-size: .29em;
+    line-height: 1.4;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.woodcrest-login-toggle-wrapper {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    margin: 0 0 28px;
+    border: 1px solid var(--wc-login-border, rgba(148,163,184,.35));
+    border-radius: 11px;
+    background: var(--wc-login-control, rgba(241,245,249,.85));
+}
+.woodcrest-login-toggle-wrapper .toggle-btn {
+    flex: 1;
+    min-width: 0;
+    padding: 11px 8px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--wc-login-muted, #475569);
+    font: inherit;
+    font-size: .88rem;
+    font-weight: 750;
+    line-height: 1.35;
+    cursor: pointer;
+    transition: background .2s ease, color .2s ease;
+}
+.woodcrest-login-toggle-wrapper .toggle-btn.active.tenant,
+.woodcrest-login-toggle-wrapper .toggle-btn.active.manager { background: var(--wc-login-button, #2563eb); color: #fff; }
+.woodcrest-login-header { text-align: center; margin: 0 0 24px; }
+.woodcrest-login-header h2 {
+    margin: 0;
+    color: var(--wc-login-text, #111827);
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    line-height: 1.25;
+    font-weight: 750;
+}
+.woodcrest-login-card .woodcrest-form-group { margin: 0 0 19px; }
+.woodcrest-login-card .woodcrest-form-group label {
+    display: block;
+    margin: 0 0 8px;
+    color: var(--wc-login-muted, #475569);
+    font-size: .78rem;
+    font-weight: 750;
+    letter-spacing: .045em;
+    text-transform: uppercase;
+}
+.woodcrest-login-card .woodcrest-form-group input {
+    display: block;
+    width: 100%;
+    height: 47px;
+    min-width: 0;
+    padding: 10px 13px;
+    box-sizing: border-box;
+    border: 1px solid var(--wc-login-border, rgba(148,163,184,.35));
+    border-radius: 9px;
+    background: var(--wc-login-control, rgba(255,255,255,.75));
+    color: var(--wc-login-text, #111827);
+    font: inherit;
+    font-size: .97rem;
+    outline: none;
+}
+.woodcrest-login-card .woodcrest-form-group input:focus-visible,
+.woodcrest-login-card .woodcrest-login-toggle-wrapper .toggle-btn:focus-visible,
+.woodcrest-login-card .woodcrest-submit-btn:focus-visible,
+.woodcrest-login-card .woodcrest-login-appearance:focus-visible {
+    outline: 2px solid var(--wc-login-accent, #2563eb);
+    outline-offset: 3px;
+}
+.woodcrest-login-card .woodcrest-form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    margin: 4px 0 25px;
+    font-size: .82rem;
+}
+.woodcrest-login-card .remember-me {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--wc-login-muted, #475569);
+    cursor: pointer;
+}
+.woodcrest-login-card .remember-me input { accent-color: var(--wc-login-accent, #2563eb); }
+.woodcrest-login-card .forgot-link { color: var(--wc-login-muted, #475569); text-decoration: none; }
+.woodcrest-login-card .forgot-link:hover { color: var(--wc-login-accent, #2563eb); text-decoration: underline; }
+.woodcrest-login-card .woodcrest-submit-btn {
+    display: block;
+    width: 100%;
+    min-height: 49px;
+    padding: 12px 16px;
+    border: 0;
+    border-radius: 9px;
+    background: var(--wc-login-button, #2563eb);
+    color: #fff;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: filter .2s ease, transform .2s ease;
+}
+.woodcrest-login-card .woodcrest-submit-btn:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.woodcrest-login-card .woodcrest-login-appearance {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    display: inline-grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    padding: 0;
+    border: 1px solid var(--wc-login-border, rgba(148,163,184,.35));
+    border-radius: 9px;
+    background: var(--wc-login-control, rgba(241,245,249,.9));
+    color: var(--wc-login-text, #111827);
+    font: inherit;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background .2s ease, border-color .2s ease;
+}
+.woodcrest-login-card .woodcrest-login-appearance:hover {
+    border-color: var(--wc-login-accent, #2563eb);
+    background: var(--wc-login-control-hover, rgba(226,232,240,.95));
+}
+.woodcrest-login-card .woodcrest-login-appearance .woodcrest-theme-toggle-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+@media (max-width: 480px) {
+    .woodcrest-login-container { padding: 25px 13px; }
+    .woodcrest-login-card { padding: 25px 20px; border-radius: 15px; }
+    .woodcrest-login-app-name { margin-top: 15px; }
+    .woodcrest-login-toggle-wrapper .toggle-btn { font-size: .83rem; }
+}
+
+.woodcrest-logout-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.1);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.2s ease;
+}
+
+.woodcrest-logout-link:hover {
+    background: #dc2626;
+    border-color: #dc2626;
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+
+
+
+
+.woodcrest-header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    flex-wrap: nowrap;
+    position: relative;
+    top: -8px;
+    right: -10px;
+    margin-left: auto;
+}
+
+.woodcrest-header-nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-height: 30px;
+    padding: 5px 9px;
+    background: rgba(255,255,255,0.08);
+    color: #fff !important;
+    text-decoration: none !important;
+    border-radius: 7px;
+    font-size: 0.74rem;
+    font-weight: 750;
+    line-height: 1;
+    border: 1px solid rgba(255,255,255,0.17);
+    box-shadow: inset 0 0 10px rgba(var(--wc-header-glow-rgb), 0.05);
+    transition: background .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+    white-space: nowrap;
+}
+
+button.woodcrest-header-nav-link {
+    appearance: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.woodcrest-theme-toggle-icon {
+    font-size: .92em;
+    line-height: 1;
+}
+
+.woodcrest-header-nav-link:hover,
+.woodcrest-header-nav-link:focus-visible {
+    background: rgba(var(--wc-header-glow-rgb), 0.22);
+    border-color: rgba(var(--wc-header-glow-rgb), 0.72);
+    box-shadow: inset 0 0 12px rgba(var(--wc-header-glow-rgb), 0.16), 0 0 12px rgba(var(--wc-header-glow-rgb), 0.10);
+    transform: translateY(-1px);
+}
+
+.woodcrest-header-nav-link--logout:hover,
+.woodcrest-header-nav-link--logout:focus-visible {
+    background: #dc2626;
+    border-color: #dc2626;
+    box-shadow: 0 4px 12px rgba(220,38,38,.28);
+}
+
+
+.woodcrest-header-actions .woodcrest-header-nav-link {
+    box-sizing: border-box;
+    width: 74px;
+    min-width: 74px;
+    height: 30px;
+    min-height: 30px;
+    padding: 0 8px;
+}
+button.woodcrest-header-nav-link.woodcrest-theme-toggle {
+    width: 74px;
+    min-width: 74px;
+    height: 30px;
+    min-height: 30px;
+    padding: 0 8px;
+}
+
+
+

@@ -1,0 +1,1094 @@
+body:is(.wc-page-role-admin,.wc-page-role-manager,.wc-page-role-tenant),
+body:is(.wc-page-role-admin,.wc-page-role-manager,.wc-page-role-tenant) #page,
+body:is(.wc-page-role-admin,.wc-page-role-manager,.wc-page-role-tenant) .site,
+body:is(.wc-page-role-admin,.wc-page-role-manager,.wc-page-role-tenant) .site-content,
+body:is(.wc-page-role-admin,.wc-page-role-manager,.wc-page-role-tenant) .site-main,
+body:is(.wc-page-role-admin,.wc-page-role-manager,.wc-page-role-tenant) .entry-content,
+body:is(.wc-page-role-admin,.wc-page-role-manager,.wc-page-role-tenant) .wp-site-blocks,
+body:is(.wc-page-role-admin,.wc-page-role-manager,.wc-page-role-tenant) .wp-block-post-content {
+    background-color: var(--wc-page-background) !important;
+    transition: background-color .22s ease;
+}
+
+
+.wc-theme-light :is(.woodcrest-fe-module.wc-role-admin, .woodcrest-fe-module.wc-role-manager-content, .woodcrest-manager-page, .woodcrest-page.wc-role-admin, .woodcrest-page.wc-role-tenant),
+.wc-theme-dark :is(.woodcrest-fe-module.wc-role-admin, .woodcrest-fe-module.wc-role-manager-content, .woodcrest-manager-page, .woodcrest-page.wc-role-admin, .woodcrest-page.wc-role-tenant) {
+    background: transparent !important;
+    color: var(--wc-mode-text) !important;
+}
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-card:not(.woodcrest-header-box), .woodcrest-fe-panel, .woodcrest-fe-card, .wc-tn-card),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-card:not(.woodcrest-header-box), .woodcrest-fe-panel, .woodcrest-fe-card, .wc-tn-card),
+.wc-theme-light .woodcrest-manager-panel,
+.wc-theme-dark .woodcrest-manager-panel {
+    background: var(--wc-mode-panel) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    box-shadow: var(--wc-mode-shadow) !important;
+}
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) .woodcrest-card-header,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) .woodcrest-card-header {
+    border-bottom-color: var(--wc-mode-divider) !important;
+}
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(h1,h2,h3,h4,h5,h6,p,label,legend,summary,strong),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(h1,h2,h3,h4,h5,h6,p,label,legend,summary,strong) {
+    color: var(--wc-mode-text) !important;
+}
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(small,.woodcrest-fe-static-value,.wc-table-tools-meta,.wc-tn-footnote,.wc-tn-table-count,.wc-search-select-empty),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(small,.woodcrest-fe-static-value,.wc-table-tools-meta,.wc-tn-footnote,.wc-tn-table-count,.wc-search-select-empty) {
+    color: var(--wc-mode-muted) !important;
+}
+
+
+
+body .woodcrest-header-box,
+body .woodcrest-header-box :is(h1,h2,h3,h4,h5,h6,p,span,strong,label,a,button),
+body .woodcrest-header-box .woodcrest-header-nav-link,
+body .woodcrest-header-box .woodcrest-header-badge {
+    color: #ffffff !important;
+}
+body .woodcrest-header-box p { color: #f1f5f9 !important; }
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-fe-form, .wc-tn-form, .wc-tn-inline-form, .wc-tn-adjustments-form, .woodcrest-filter-row, .woodcrest-meter-form),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-fe-form, .wc-tn-form, .wc-tn-inline-form, .wc-tn-adjustments-form, .woodcrest-filter-row, .woodcrest-meter-form) {
+    background: var(--wc-mode-panel-soft) !important;
+    color: var(--wc-mode-text) !important;
+    border: 1px solid var(--wc-mode-border) !important;
+    border-radius: 12px;
+    box-shadow: none !important;
+}
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) .woodcrest-fe-form,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) .woodcrest-fe-form {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(input:not([type="checkbox"]):not([type="radio"]),select,textarea,.wc-search-select-trigger,.woodcrest-fe-static-value),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(input:not([type="checkbox"]):not([type="radio"]),select,textarea,.wc-search-select-trigger,.woodcrest-fe-static-value) {
+    background: var(--wc-mode-control) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(input,textarea)::placeholder,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(input,textarea)::placeholder {
+    color: var(--wc-mode-muted) !important;
+    opacity: .82;
+}
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) select option {
+    background: #ffffff;
+    color: #111827;
+}
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) select option {
+    background: var(--wc-mode-panel-soft);
+    color: #ffffff;
+}
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) .wc-search-select-dropdown,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) .wc-search-select-dropdown {
+    background: var(--wc-mode-panel) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    box-shadow: 0 12px 28px rgba(0,0,0,.22) !important;
+}
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.wc-search-select-input,.wc-search-select-option),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.wc-search-select-input,.wc-search-select-option) {
+    background: var(--wc-mode-panel) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.wc-search-select-option:hover,.wc-search-select-option:focus,.wc-search-select-option.is-selected),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.wc-search-select-option:hover,.wc-search-select-option:focus,.wc-search-select-option.is-selected) {
+    background: var(--wc-mode-table-hover) !important;
+    color: var(--wc-mode-text) !important;
+}
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) {
+    background: var(--wc-mode-table-row) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+}
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) thead th,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) thead th {
+    background: var(--wc-mode-table-head) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) td,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) td {
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    background: transparent !important;
+}
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) tbody tr:nth-child(odd),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) tbody tr:nth-child(odd) {
+    background: var(--wc-mode-table-row) !important;
+}
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) tbody tr:nth-child(even),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) tbody tr:nth-child(even) {
+    background: var(--wc-mode-table-row-alt) !important;
+}
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) tbody tr:hover,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) tbody tr:hover {
+    background: var(--wc-mode-table-hover) !important;
+}
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) a,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) a {
+    color: var(--wc-mode-link) !important;
+}
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) small,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-table,.woodcrest-fe-table,.wc-tn-table,.widefat) small {
+    color: var(--wc-mode-muted) !important;
+}
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.wc-table-filter,.wc-table-sort-button),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.wc-table-filter,.wc-table-sort-button) {
+    background: var(--wc-mode-control) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) .wc-table-sort-button:hover,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) .wc-table-sort-button:hover,
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) .wc-table-sort-button.is-active,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) .wc-table-sort-button.is-active {
+    background: var(--wc-mode-button) !important;
+    color: #ffffff !important;
+}
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-fe-button,.wc-tn-button):not(.woodcrest-fe-button-danger):not(.wc-tn-button-finalize),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-fe-button,.wc-tn-button):not(.woodcrest-fe-button-danger):not(.wc-tn-button-finalize) {
+    background: var(--wc-mode-button) !important;
+    color: #ffffff !important;
+    border-color: var(--wc-mode-button) !important;
+}
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-fe-button,.wc-tn-button):not(.woodcrest-fe-button-danger):not(.wc-tn-button-finalize):hover,
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-fe-button,.wc-tn-button):not(.woodcrest-fe-button-danger):not(.wc-tn-button-finalize):hover {
+    background: var(--wc-mode-button-hover) !important;
+}
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-invoice-meta-grid > div,.woodcrest-invoice-nnn-summary,.woodcrest-invoice-status),
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) :is(.woodcrest-invoice-meta-grid > div,.woodcrest-invoice-nnn-summary,.woodcrest-invoice-status) {
+    background: var(--wc-mode-panel-soft) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+
+
+.wc-theme-light .wc-role-manager-content :is(.wc-tn-checkbox-field,.wc-tn-expense-block,.wc-tn-tenant-adjustment,.wc-tn-charge-card),
+.wc-theme-dark .wc-role-manager-content :is(.wc-tn-checkbox-field,.wc-tn-expense-block,.wc-tn-tenant-adjustment,.wc-tn-charge-card) {
+    background: var(--wc-mode-panel-soft) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+
+
+
+
+
+.wc-theme-light .woodcrest-card.wc-role-tenant,
+.wc-theme-dark .woodcrest-card.wc-role-tenant,
+.wc-theme-light .woodcrest-stats.wc-role-tenant .woodcrest-stat-card,
+.wc-theme-dark .woodcrest-stats.wc-role-tenant .woodcrest-stat-card {
+    background: var(--wc-mode-panel) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    box-shadow: var(--wc-mode-shadow) !important;
+}
+.wc-theme-light .woodcrest-stats.wc-role-tenant :is(.woodcrest-stat-label,.woodcrest-stat-value),
+.wc-theme-dark .woodcrest-stats.wc-role-tenant :is(.woodcrest-stat-label,.woodcrest-stat-value),
+.wc-theme-light .woodcrest-card.wc-role-tenant :is(.woodcrest-utility-help,.woodcrest-utility-note),
+.wc-theme-dark .woodcrest-card.wc-role-tenant :is(.woodcrest-utility-help,.woodcrest-utility-note) {
+    color: var(--wc-mode-text) !important;
+}
+.wc-theme-light .woodcrest-stats.wc-role-tenant .woodcrest-stat-label,
+.wc-theme-dark .woodcrest-stats.wc-role-tenant .woodcrest-stat-label {
+    color: var(--wc-mode-muted) !important;
+}
+
+
+.wc-theme-light .wc-role-manager-content :is(.woodcrest-utility-help,.woodcrest-utility-note),
+.wc-theme-dark .wc-role-manager-content :is(.woodcrest-utility-help,.woodcrest-utility-note) {
+    color: var(--wc-mode-muted) !important;
+}
+
+
+.wc-theme-dark .woodcrest-stats.wc-role-tenant .woodcrest-stat-value:not(.is-positive):not(.is-negative) {
+    color: #ffffff !important;
+}
+.wc-theme-light .woodcrest-stats.wc-role-tenant .woodcrest-stat-value:not(.is-positive):not(.is-negative) {
+    color: #111827 !important;
+}
+
+
+
+
+.wc-theme-light .woodcrest-manager-panel .woodcrest-mini-stat,
+.wc-theme-dark .woodcrest-manager-panel .woodcrest-mini-stat {
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+.wc-theme-light .woodcrest-manager-panel .woodcrest-mini-stat span,
+.wc-theme-light .woodcrest-manager-panel .woodcrest-mini-stat strong {
+    color: #111827 !important;
+}
+.wc-theme-dark .woodcrest-manager-panel .woodcrest-mini-stat span {
+    color: var(--wc-mode-muted) !important;
+}
+.wc-theme-dark .woodcrest-manager-panel .woodcrest-mini-stat strong {
+    color: #ffffff !important;
+}
+
+
+body .woodcrest-header-box.wc-role-manager h1,
+body .woodcrest-header-box.wc-role-manager p,
+body .woodcrest-header-box.wc-role-tenant h1,
+body .woodcrest-header-box.wc-role-tenant p,
+body .woodcrest-fe-manager-header .woodcrest-header-box h1,
+body .woodcrest-fe-manager-header .woodcrest-header-box p,
+body .woodcrest-fe-admin-header .woodcrest-header-box h1,
+body .woodcrest-fe-admin-header .woodcrest-header-box p,
+body .woodcrest-fe-user-header .woodcrest-header-box h1,
+body .woodcrest-fe-user-header .woodcrest-header-box p {
+    color: #ffffff !important;
+}
+
+
+.wc-theme-light .woodcrest-invoice-create-card :is(
+    .woodcrest-fe-field select,
+    .wc-search-select-trigger,
+    .wc-search-select-trigger-text,
+    .wc-search-select-input,
+    .wc-search-select-option,
+    input[type="month"],
+    .woodcrest-fe-static-value
+),
+.wc-theme-dark .woodcrest-invoice-create-card :is(
+    .woodcrest-fe-field select,
+    .wc-search-select-trigger,
+    .wc-search-select-trigger-text,
+    .wc-search-select-input,
+    .wc-search-select-option,
+    input[type="month"],
+    .woodcrest-fe-static-value
+) {
+    color: var(--wc-mode-text) !important;
+}
+.wc-theme-light .woodcrest-invoice-create-card :is(
+    .woodcrest-fe-field select,
+    .wc-search-select-trigger,
+    input[type="month"],
+    .woodcrest-fe-static-value
+),
+.wc-theme-dark .woodcrest-invoice-create-card :is(
+    .woodcrest-fe-field select,
+    .wc-search-select-trigger,
+    input[type="month"],
+    .woodcrest-fe-static-value
+) {
+    background: var(--wc-mode-control) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+.wc-theme-light .woodcrest-invoice-create-card :is(.wc-search-select:not(.has-value) .wc-search-select-trigger-text,.wc-search-select-arrow),
+.wc-theme-dark .woodcrest-invoice-create-card :is(.wc-search-select:not(.has-value) .wc-search-select-trigger-text,.wc-search-select-arrow) {
+    color: var(--wc-mode-text) !important;
+}
+.wc-theme-light .woodcrest-invoice-create-card :is(.wc-search-select-dropdown,.wc-search-select-input,.wc-search-select-option),
+.wc-theme-dark .woodcrest-invoice-create-card :is(.wc-search-select-dropdown,.wc-search-select-input,.wc-search-select-option) {
+    background: var(--wc-mode-panel) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+.wc-theme-light .woodcrest-invoice-create-card :is(.wc-search-select-option:hover,.wc-search-select-option:focus,.wc-search-select-option.is-selected),
+.wc-theme-dark .woodcrest-invoice-create-card :is(.wc-search-select-option:hover,.wc-search-select-option:focus,.wc-search-select-option.is-selected) {
+    background: var(--wc-mode-table-hover) !important;
+    color: var(--wc-mode-text) !important;
+}
+.wc-theme-light .woodcrest-invoice-create-card select option {
+    background: #ffffff !important;
+    color: #111827 !important;
+}
+.wc-theme-dark .woodcrest-invoice-create-card select option {
+    background: var(--wc-mode-control) !important;
+    color: #ffffff !important;
+}
+
+
+body .wc-role-admin .woodcrest-action-btn,
+body .wc-role-admin .woodcrest-action-btn:visited,
+body .wc-role-admin .woodcrest-action-btn:hover,
+body .wc-role-admin .woodcrest-action-btn:focus {
+    color: #ffffff !important;
+}
+
+
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant)
+:is(.woodcrest-card:not(.woodcrest-header-box), .woodcrest-fe-panel, .woodcrest-fe-card, .wc-tn-card) {
+    background: var(--wc-mode-panel) !important;
+}
+
+.wc-theme-light :is(.wc-role-admin, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant)
+:is(.woodcrest-fe-form, .wc-tn-form, .wc-tn-inline-form, .wc-tn-adjustments-form, .woodcrest-filter-row, .woodcrest-meter-form) {
+    background: var(--wc-mode-panel-soft) !important;
+}
+
+
+.wc-theme-light .woodcrest-manager-panel .woodcrest-manager-manage-grid .woodcrest-mini-stat {
+    background: var(--wc-mode-panel-soft) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    box-shadow: 0 8px 22px rgba(39, 134, 75, .08) !important;
+}
+
+.wc-theme-dark .woodcrest-manager-panel .woodcrest-manager-manage-grid .woodcrest-mini-stat {
+    background: var(--wc-mode-panel-soft) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, .24) !important;
+}
+
+.wc-theme-light .woodcrest-manager-panel .woodcrest-manager-manage-grid .woodcrest-mini-stat span {
+    color: var(--wc-mode-muted) !important;
+}
+.wc-theme-light .woodcrest-manager-panel .woodcrest-manager-manage-grid .woodcrest-mini-stat strong {
+    color: var(--wc-mode-text) !important;
+}
+.wc-theme-dark .woodcrest-manager-panel .woodcrest-manager-manage-grid .woodcrest-mini-stat span {
+    color: var(--wc-mode-muted) !important;
+}
+.wc-theme-dark .woodcrest-manager-panel .woodcrest-manager-manage-grid .woodcrest-mini-stat strong {
+    color: #ffffff !important;
+}
+
+
+
+
+.wc-theme-light .wc-role-manager-content .wc-tn-metric,
+.wc-theme-dark .wc-role-manager-content .wc-tn-metric {
+    background: var(--wc-mode-panel-soft) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    box-shadow: 0 5px 14px rgba(0,0,0,.08) !important;
+}
+.wc-theme-light .wc-role-manager-content .wc-tn-metric span {
+    color: var(--wc-mode-muted) !important;
+}
+.wc-theme-light .wc-role-manager-content .wc-tn-metric strong {
+    color: var(--wc-mode-text) !important;
+}
+.wc-theme-dark .wc-role-manager-content .wc-tn-metric span {
+    color: var(--wc-mode-muted) !important;
+}
+.wc-theme-dark .wc-role-manager-content .wc-tn-metric strong {
+    color: #ffffff !important;
+}
+
+
+.wc-theme-light .wc-role-manager-content .wc-tn-info {
+    background: #eff6ff !important;
+    border-color: #93c5fd !important;
+    color: #1e3a8a !important;
+}
+.wc-theme-dark .wc-role-manager-content .wc-tn-info {
+    background: #172554 !important;
+    border-color: #3b82f6 !important;
+    color: #dbeafe !important;
+}
+.wc-theme-light .wc-role-manager-content .wc-tn-info.drafted {
+    background: #f5f3ff !important;
+    border-color: #c4b5fd !important;
+    color: #5b21b6 !important;
+}
+.wc-theme-dark .wc-role-manager-content .wc-tn-info.drafted {
+    background: #2e1065 !important;
+    border-color: #8b5cf6 !important;
+    color: #ede9fe !important;
+}
+
+
+body.wc-theme-light :is(.woodcrest-fe-notice.error, .wc-tn-notice.error) {
+    background: #fef2f2 !important;
+    border: 1px solid #f87171 !important;
+    color: #991b1b !important;
+    box-shadow: 0 5px 14px rgba(185,28,28,.08) !important;
+}
+body.wc-theme-dark :is(.woodcrest-fe-notice.error, .wc-tn-notice.error) {
+    background: #3f1719 !important;
+    border: 1px solid #ef4444 !important;
+    color: #fecaca !important;
+    box-shadow: 0 5px 14px rgba(0,0,0,.20) !important;
+}
+
+body.wc-theme-light :is(.woodcrest-fe-notice.success, .wc-tn-notice.success) {
+    background: #ecfdf3 !important;
+    border: 1px solid #4ade80 !important;
+    color: #166534 !important;
+    box-shadow: 0 5px 14px rgba(22,101,52,.08) !important;
+}
+body.wc-theme-dark :is(.woodcrest-fe-notice.success, .wc-tn-notice.success) {
+    background: #12351f !important;
+    border: 1px solid #22c55e !important;
+    color: #bbf7d0 !important;
+    box-shadow: 0 5px 14px rgba(0,0,0,.20) !important;
+}
+
+
+body.wc-theme-light .woodcrest-fe-notice.warning {
+    background: #fffbeb !important;
+    border: 1px solid #f59e0b !important;
+    color: #92400e !important;
+}
+body.wc-theme-dark .woodcrest-fe-notice.warning {
+    background: #3d2b0b !important;
+    border: 1px solid #f59e0b !important;
+    color: #fde68a !important;
+}
+body.wc-theme-light .woodcrest-fe-notice.info {
+    background: #eff6ff !important;
+    border: 1px solid #60a5fa !important;
+    color: #1e40af !important;
+}
+body.wc-theme-dark .woodcrest-fe-notice.info {
+    background: #172554 !important;
+    border: 1px solid #3b82f6 !important;
+    color: #dbeafe !important;
+}
+
+
+body.wc-theme-light :is(.woodcrest-fe-notice, .wc-tn-notice) :is(a,strong),
+body.wc-theme-dark :is(.woodcrest-fe-notice, .wc-tn-notice) :is(a,strong) {
+    color: inherit !important;
+}
+
+
+
+
+.wc-role-manager-content .wc-tn-button.is-ready::after {
+    content: none !important;
+    display: none !important;
+}
+
+.wc-theme-light .wc-role-manager-content .wc-tn-button.is-ready,
+.wc-theme-light .wc-role-manager-content .wc-tn-button:focus-visible,
+.wc-theme-light .wc-role-manager-content .wc-tn-button:hover {
+    box-shadow: 0 6px 16px rgba(22, 163, 74, .24) !important;
+}
+
+.wc-theme-dark .wc-role-manager-content .wc-tn-button.is-ready,
+.wc-theme-dark .wc-role-manager-content .wc-tn-button:focus-visible,
+.wc-theme-dark .wc-role-manager-content .wc-tn-button:hover {
+    box-shadow: 0 6px 16px rgba(47, 158, 118, .28) !important;
+}
+
+.wc-theme-light .wc-role-manager-content .wc-tn-button:focus-visible,
+.wc-theme-dark .wc-role-manager-content .wc-tn-button:focus-visible {
+    outline: 2px solid rgba(110, 231, 183, .7) !important;
+    outline-offset: 2px;
+}
+
+
+.wc-theme-dark :is(.wc-role-manager, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel)
+:is(.woodcrest-card:not(.woodcrest-header-box),
+    .woodcrest-fe-panel,
+    .woodcrest-fe-card,
+    .wc-tn-card,
+    .woodcrest-fe-form,
+    .wc-tn-form,
+    .wc-tn-inline-form,
+    .wc-tn-adjustments-form,
+    .woodcrest-filter-row,
+    .woodcrest-meter-form,
+    .wc-tn-expense-block,
+    .wc-tn-checkbox-field,
+    .wc-tn-tenant-adjustment,
+    .wc-tn-charge-card) {
+    background: var(--wc-mode-panel-soft) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    box-shadow: none !important;
+}
+
+
+.wc-theme-dark :is(.wc-role-manager, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel)
+:is(input:not([type="checkbox"]):not([type="radio"]), select, textarea, .wc-search-select-trigger, .woodcrest-fe-static-value) {
+    background: var(--wc-mode-control) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+
+.wc-theme-dark .wc-role-manager-content :is(.wc-tn-metric, .woodcrest-mini-stat) {
+    background: var(--wc-mode-control) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+
+
+.wc-theme-dark :is(.wc-role-manager, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel)
+:is(.woodcrest-fe-form, .wc-tn-form, .wc-tn-inline-form, .wc-tn-adjustments-form, .woodcrest-filter-row, .woodcrest-meter-form,
+    .wc-tn-expense-block, .wc-tn-charge-card, .wc-tn-tenant-adjustment)
+:is(h1,h2,h3,h4,h5,h6,label,strong,summary,p) {
+    color: #ffffff !important;
+}
+
+
+
+
+html body .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.woodcrest-admin-portal-btn,
+html body .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.woodcrest-admin-portal-btn:link,
+html body .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.woodcrest-admin-portal-btn:visited,
+html body .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.woodcrest-admin-portal-btn:hover,
+html body .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.woodcrest-admin-portal-btn:focus,
+html body .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.woodcrest-admin-portal-btn:active {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+
+
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant)
+:is(.wc-search-select-trigger-text, .wc-search-select-arrow, .woodcrest-fe-static-value) {
+    color: var(--wc-mode-text) !important;
+    -webkit-text-fill-color: var(--wc-mode-text) !important;
+}
+
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant)
+:is(.woodcrest-fe-field small, .woodcrest-utility-help, .woodcrest-utility-note, .wc-table-tools-meta, .wc-tn-footnote, .wc-tn-table-count, .woodcrest-mini-stat span, .woodcrest-stat-label) {
+    color: var(--wc-mode-muted) !important;
+}
+
+.wc-theme-dark :is(.wc-role-admin, .wc-role-manager, .wc-role-manager-content, .woodcrest-manager-page, .woodcrest-manager-panel, .wc-role-tenant) a:not(.woodcrest-header-nav-link):not(.woodcrest-admin-portal-btn) {
+    color: var(--wc-mode-link) !important;
+}
+
+
+
+.wc-theme-light :is(.wc-tn-card, .woodcrest-invoice-create-card, .woodcrest-invoice-preview, .woodcrest-invoice-document),
+.wc-theme-dark :is(.wc-tn-card, .woodcrest-invoice-create-card, .woodcrest-invoice-preview, .woodcrest-invoice-document) {
+    background: var(--wc-mode-panel) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    box-shadow: var(--wc-mode-shadow) !important;
+}
+
+.wc-theme-light .woodcrest-manager-action-card {
+    box-shadow: var(--wc-master-shadow-light) !important;
+}
+.wc-theme-dark .woodcrest-manager-action-card {
+    box-shadow: var(--wc-master-shadow-dark) !important;
+}
+
+.wc-theme-light .woodcrest-manager-action-card:hover,
+.wc-theme-dark .woodcrest-manager-action-card:hover {
+    background: linear-gradient(180deg, var(--wc-master-accent-bright) 0%, var(--wc-master-accent-strong) 100%) !important;
+    color: #ffffff !important;
+    box-shadow: 0 16px 34px rgba(0,0,0,.28), 0 0 26px rgba(var(--wc-master-glow-rgb),.36) !important;
+    transform: translateY(-2px);
+}
+
+.wc-theme-light :is(.wc-tn-card, .woodcrest-invoice-create-card, .woodcrest-invoice-preview, .woodcrest-invoice-document)
+:is(h1,h2,h3,h4,h5,h6,p,label,strong,summary),
+.wc-theme-dark :is(.wc-tn-card, .woodcrest-invoice-create-card, .woodcrest-invoice-preview, .woodcrest-invoice-document)
+:is(h1,h2,h3,h4,h5,h6,p,label,strong,summary) {
+    color: var(--wc-mode-text) !important;
+}
+
+.wc-theme-dark :is(.wc-tn-card, .woodcrest-invoice-create-card, .woodcrest-invoice-preview, .woodcrest-invoice-document) {
+    box-shadow: var(--wc-master-shadow-dark) !important;
+}
+
+
+
+.wc-theme-dark :is(
+    .wc-tn-card,
+    .woodcrest-invoice-create-card,
+    .woodcrest-invoice-preview,
+    .woodcrest-invoice-document,
+    .woodcrest-utility-workflow-module > .woodcrest-card,
+    .woodcrest-utility-workflow-module .woodcrest-meter-batch-card
+) {
+    box-shadow: var(--wc-master-shadow-dark) !important;
+}
+
+
+.wc-theme-dark :is(
+    .woodcrest-page.wc-role-tenant .woodcrest-card,
+    .woodcrest-card.wc-role-tenant,
+    .woodcrest-stats.wc-role-tenant .woodcrest-stat-card
+) {
+    box-shadow: var(--wc-master-shadow-dark) !important;
+}
+
+
+body.wc-page-role-manager :is(
+    .woodcrest-card:not(.woodcrest-header-box),
+    .woodcrest-fe-panel,
+    .woodcrest-fe-card,
+    .wc-tn-card,
+    .woodcrest-invoice-create-card,
+    .woodcrest-invoice-preview,
+    .woodcrest-invoice-document,
+    .woodcrest-manager-action-card
+),
+body.wc-page-role-admin :is(
+    .woodcrest-card:not(.woodcrest-header-box),
+    .woodcrest-fe-panel,
+    .woodcrest-fe-card
+),
+body.wc-page-role-tenant :is(
+    .woodcrest-card:not(.woodcrest-header-box),
+    .woodcrest-fe-panel,
+    .woodcrest-fe-card,
+    .woodcrest-stat-card
+) {
+    background: var(--wc-mode-panel) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+    box-shadow: var(--wc-mode-shadow) !important;
+}
+
+
+body.wc-page-role-manager .woodcrest-manager-action-card {
+    box-shadow: var(--wc-mode-shadow) !important;
+}
+body.wc-page-role-manager .woodcrest-manager-action-card:hover {
+    background: linear-gradient(180deg, var(--wc-master-accent-bright) 0%, var(--wc-master-accent-strong) 100%) !important;
+    color: #fff !important;
+    box-shadow: 0 16px 34px rgba(0,0,0,.28), 0 0 18px rgba(var(--wc-master-glow-rgb),.42), 0 0 34px rgba(var(--wc-master-glow-rgb),.24) !important;
+}
+
+
+body.wc-theme-dark.wc-page-role-manager :is(
+    .woodcrest-card:not(.woodcrest-header-box),
+    .woodcrest-fe-panel,
+    .woodcrest-fe-card,
+    .wc-tn-card,
+    .woodcrest-invoice-create-card,
+    .woodcrest-invoice-preview,
+    .woodcrest-invoice-document,
+    .woodcrest-utility-workflow-module > .woodcrest-card,
+    .woodcrest-meter-batch-card
+) {
+    box-shadow: var(--wc-master-shadow-dark) !important;
+}
+
+
+body.wc-theme-light .woodcrest-invoice-confirm-blocked {
+    background: #fef2f2 !important;
+    border-color: #f87171 !important;
+    color: #991b1b !important;
+    box-shadow: 0 5px 14px rgba(185,28,28,.08) !important;
+}
+body.wc-theme-dark .woodcrest-invoice-confirm-blocked {
+    background: #3f1719 !important;
+    border-color: #ef4444 !important;
+    color: #fecaca !important;
+    box-shadow: 0 5px 14px rgba(0,0,0,.20) !important;
+}
+body.wc-theme-light .woodcrest-invoice-confirm-blocked :is(p,strong),
+body.wc-theme-dark .woodcrest-invoice-confirm-blocked :is(p,strong) {
+    color: inherit !important;
+}
+
+
+.wc-theme-light .wc-tn-owner-setting,
+.wc-theme-dark .wc-tn-owner-setting {
+    background: var(--wc-mode-panel-soft) !important;
+    border-color: var(--wc-mode-border) !important;
+    color: var(--wc-mode-text) !important;
+}
+.wc-theme-light .wc-tn-owner-row > *,
+.wc-theme-dark .wc-tn-owner-row > * {
+    background: var(--wc-mode-panel-soft) !important;
+    color: var(--wc-mode-text) !important;
+}
+
+
+body.wc-theme-light .woodcrest-invoice-preview .woodcrest-fe-table tfoot th,
+body.wc-theme-dark .woodcrest-invoice-preview .woodcrest-fe-table tfoot th {
+    background: var(--wc-mode-table-row-alt) !important;
+    color: var(--wc-mode-text) !important;
+    border-color: var(--wc-mode-border) !important;
+}
+body.wc-theme-light .woodcrest-invoice-preview .woodcrest-fe-table tfoot tr:last-child th,
+body.wc-theme-dark .woodcrest-invoice-preview .woodcrest-fe-table tfoot tr:last-child th {
+    background: var(--wc-mode-panel-soft) !important;
+}
+body.wc-theme-light .woodcrest-invoice-confirm-blocked .woodcrest-fe-button-disabled,
+body.wc-theme-dark .woodcrest-invoice-confirm-blocked .woodcrest-fe-button-disabled,
+body.wc-theme-light .woodcrest-invoice-confirm-blocked .woodcrest-fe-button-disabled:hover,
+body.wc-theme-dark .woodcrest-invoice-confirm-blocked .woodcrest-fe-button-disabled:hover {
+    background: var(--wc-mode-button) !important;
+    border-color: var(--wc-mode-button) !important;
+    color: #ffffff !important;
+    opacity: .74 !important;
+    filter: none !important;
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+}
+
+
+.woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-manager-btn,
+.woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-manager-btn:visited {
+    background: #15803d !important;
+    border: 1px solid #166534 !important;
+    color: #ffffff !important;
+}
+.woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-tenant-btn,
+.woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-tenant-btn:visited {
+    background: #1d4ed8 !important;
+    border: 1px solid #1e40af !important;
+    color: #ffffff !important;
+}
+.woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-manager-btn:hover,
+.woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-manager-btn:focus-visible { background: #16a34a !important; }
+.woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-tenant-btn:hover,
+.woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-tenant-btn:focus-visible { background: #2563eb !important; }
+.wc-theme-dark .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-manager-btn { background: #166534 !important; border-color: #22c55e !important; }
+.wc-theme-dark .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-tenant-btn { background: #1e40af !important; border-color: #60a5fa !important; }
+.wc-theme-dark .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-manager-btn:hover { background: #15803d !important; }
+.wc-theme-dark .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table a.wc-demo-tenant-btn:hover { background: #1d4ed8 !important; }
+
+body.woodcrest-login-page-active {
+    min-height: 100vh;
+    min-height: 100svh;
+    --wc-login-text: #172238;
+    --wc-login-muted: #41536b;
+    --wc-login-card: #f8fafc;
+    --wc-login-control: #ffffff;
+    --wc-login-control-hover: #f1f5f9;
+    --wc-login-border: #cbd5e1;
+    --wc-login-tab-bg: #e8edf4;
+    --wc-login-pill-bg: #172238;
+    --wc-login-pill-text: #ffffff;
+    --wc-login-pill-border: #172238;
+    background: #edf2f7 !important;
+    color: var(--wc-login-text);
+}
+body.wc-theme-dark.woodcrest-login-page-active {
+    --wc-login-text: #f1f5f9;
+    --wc-login-muted: #cbd5e1;
+    --wc-login-card: #192230;
+    --wc-login-control: #0e1726;
+    --wc-login-control-hover: #26344a;
+    --wc-login-border: #46546b;
+    --wc-login-tab-bg: #0e1726;
+    --wc-login-pill-bg: #eef2f7;
+    --wc-login-pill-text: #172238;
+    --wc-login-pill-border: #eef2f7;
+    background: #0f1725 !important;
+}
+body.woodcrest-login-page-active :is(#page, .site, .site-content, .site-main, .entry-content, .wp-site-blocks, .wp-block-post-content, .woodcrest-login-container) {
+    background-color: transparent !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-container {
+    --wc-login-accent: #2563eb;
+    --wc-login-button: #2563eb;
+    --wc-login-glow-rgb: 37, 99, 235;
+    position: relative;
+    left: auto;
+    transform: none;
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
+    min-height: min(760px, 90svh);
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    color: var(--wc-login-text);
+    color-scheme: light;
+}
+body.woodcrest-login-page-active .woodcrest-login-container[data-login-role="manager"] {
+    --wc-login-accent: #27864b;
+    --wc-login-button: #27864b;
+    --wc-login-glow-rgb: 47, 158, 118;
+}
+body.wc-theme-dark.woodcrest-login-page-active .woodcrest-login-container {
+    --wc-login-accent: #60a5fa;
+    --wc-login-button: #1d4ed8;
+    --wc-login-glow-rgb: 96, 165, 250;
+    color-scheme: dark;
+}
+body.wc-theme-dark.woodcrest-login-page-active .woodcrest-login-container[data-login-role="manager"] {
+    --wc-login-accent: #2f9e76;
+    --wc-login-button: #15803d;
+    --wc-login-glow-rgb: 47, 158, 118;
+}
+body.woodcrest-login-page-active .woodcrest-login-card {
+    background: var(--wc-login-card) !important;
+    color: var(--wc-login-text) !important;
+    border: 1px solid var(--wc-login-border) !important;
+    border-top: 4px solid var(--wc-login-accent) !important;
+    box-shadow: 0 20px 54px rgba(15,23,42,.16), 0 0 0 1px rgba(var(--wc-login-glow-rgb), .06) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    opacity: 1 !important;
+}
+body.wc-theme-dark.woodcrest-login-page-active .woodcrest-login-card {
+    box-shadow: 0 22px 56px rgba(0,0,0,.44), 0 0 22px rgba(var(--wc-login-glow-rgb), .12) !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-app-name {
+    color: var(--wc-login-text) !important;
+    font-size: clamp(2.1rem, 6vw, 2.7rem);
+    font-weight: 850;
+    letter-spacing: -.045em;
+    line-height: 1.15;
+}
+body.woodcrest-login-page-active .woodcrest-login-app-name .utility-box {
+    display: inline-block;
+    width: auto;
+    padding: 8px 15px;
+    background: var(--wc-login-pill-bg) !important;
+    border: 1px solid var(--wc-login-pill-border) !important;
+    border-radius: 7px;
+    color: var(--wc-login-pill-text) !important;
+    font-size: clamp(.68rem, 2vw, .78rem);
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: .105em;
+}
+body.woodcrest-login-page-active .woodcrest-login-header h2 {
+    color: var(--wc-login-text) !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-toggle-wrapper {
+    background: var(--wc-login-tab-bg) !important;
+    border-color: var(--wc-login-border) !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-toggle-wrapper .toggle-btn {
+    background: transparent !important;
+    color: var(--wc-login-muted) !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-toggle-wrapper .toggle-btn.active {
+    background: var(--wc-login-button) !important;
+    color: #fff !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-form-group label,
+body.woodcrest-login-page-active .woodcrest-login-card .remember-me,
+body.woodcrest-login-page-active .woodcrest-login-card .forgot-link {
+    color: var(--wc-login-muted) !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-form-group input {
+    background: var(--wc-login-control) !important;
+    border: 1px solid var(--wc-login-border) !important;
+    color: var(--wc-login-text) !important;
+    -webkit-text-fill-color: var(--wc-login-text);
+    box-shadow: none !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-form-group input::placeholder {
+    color: var(--wc-login-muted) !important;
+    opacity: .8;
+    -webkit-text-fill-color: var(--wc-login-muted);
+}
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-form-group input:focus {
+    border-color: var(--wc-login-accent) !important;
+    box-shadow: 0 0 0 3px rgba(var(--wc-login-glow-rgb), .17) !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-form-group input:-webkit-autofill,
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-form-group input:-webkit-autofill:hover,
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-form-group input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--wc-login-text) !important;
+    -webkit-box-shadow: 0 0 0 100px var(--wc-login-control) inset !important;
+    caret-color: var(--wc-login-text);
+}
+body.woodcrest-login-page-active .woodcrest-login-card .remember-me input {
+    accent-color: var(--wc-login-button) !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-card .forgot-link:hover {
+    color: var(--wc-login-accent) !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-submit-btn,
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-submit-btn:hover {
+    background: var(--wc-login-button) !important;
+    color: #ffffff !important;
+    border-color: var(--wc-login-button) !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-login-appearance {
+    background: var(--wc-login-control) !important;
+    color: var(--wc-login-text) !important;
+    border-color: var(--wc-login-border) !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-card .woodcrest-login-appearance:hover {
+    background: var(--wc-login-control-hover) !important;
+    border-color: var(--wc-login-accent) !important;
+}
+body.woodcrest-login-page-active .woodcrest-login-card :is(.woodcrest-submit-btn, .toggle-btn, .woodcrest-login-appearance, .woodcrest-form-group input):focus-visible {
+    outline-color: var(--wc-login-accent) !important;
+}
+@media (max-width: 480px) {
+    body.woodcrest-login-page-active .woodcrest-login-app-name { font-size: clamp(1.95rem, 9vw, 2.3rem); }
+    body.woodcrest-login-page-active .woodcrest-login-app-name .utility-box { font-size: .65rem; }
+}
+
+.wc-role-admin .wc-manager-coverage-option { display: flex; align-items: center; gap: 10px; padding: 10px 0; color: var(--wc-role-form-text); cursor: pointer; }
+.wc-role-admin .wc-manager-coverage-option input { width: 18px; height: 18px; accent-color: var(--wc-master-accent); }
+
+
+.wc-theme-light .wc-role-admin .wc-manager-assignment-table {
+    --wc-manager-group-toner: #000;
+    --wc-manager-group-shade: 3.5%;
+    --wc-manager-group-outline: rgba(0, 0, 0, .20);
+}
+.wc-theme-dark .wc-role-admin .wc-manager-assignment-table {
+    --wc-manager-group-toner: #fff;
+    --wc-manager-group-shade: 5%;
+    --wc-manager-group-outline: rgba(255, 255, 255, .27);
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-row,
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-detail-row {
+    --wc-manager-group-surface: var(--wc-role-table-base);
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-group-alt {
+    --wc-manager-group-surface: var(--wc-role-table-alt);
+    --wc-manager-group-surface: color-mix(in srgb, var(--wc-role-table-base) calc(100% - var(--wc-manager-group-shade)), var(--wc-manager-group-toner) var(--wc-manager-group-shade));
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-row,
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-detail-row,
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-row:hover,
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-detail-row:hover {
+    background: var(--wc-manager-group-surface) !important;
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-detail-row .wc-manager-assignment-subtable,
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-detail-row .wc-manager-assignment-subtable .woodcrest-table,
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-detail-row .wc-manager-assignment-subtable .woodcrest-table tbody tr,
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-detail-row .wc-manager-assignment-subtable .woodcrest-table tbody tr:hover {
+    background: var(--wc-manager-group-surface) !important;
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-detail-row .wc-manager-assignment-subtable {
+    border-top: 1px solid var(--wc-role-table-border);
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-row.is-expanded > td {
+    border-top: 1px solid var(--wc-manager-group-outline) !important;
+    border-bottom: 0 !important;
+    border-radius: 0;
+    box-shadow: none;
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-row.is-expanded > td:first-child {
+    border-left: 1px solid var(--wc-manager-group-outline) !important;
+    border-top-left-radius: 12px;
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-row.is-expanded > td:last-child {
+    border-right: 1px solid var(--wc-manager-group-outline) !important;
+    border-top-right-radius: 12px;
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-detail-row.is-expanded > td {
+    border-top: 0 !important;
+    border-left: 1px solid var(--wc-manager-group-outline) !important;
+    border-right: 1px solid var(--wc-manager-group-outline) !important;
+    border-bottom: 1px solid var(--wc-manager-group-outline) !important;
+    border-radius: 0 0 12px 12px;
+    box-shadow: none;
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-assignment-row.is-expanded .wc-manager-assignment-toggle {
+    box-shadow: 0 2px 9px rgba(0, 0, 0, .10);
+}
+
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-group-spacer,
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-group-spacer:hover {
+    background: var(--wc-mode-panel) !important;
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-group-spacer > td {
+    background: var(--wc-mode-panel) !important;
+    border: 0 !important;
+    height: 8px;
+    padding: 0 !important;
+    line-height: 0;
+}
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-group-spacer:last-child,
+.wc-role-admin .woodcrest-pm-assignments-table .wc-manager-assignment-table > tbody > tr.wc-manager-group-spacer[hidden] {
+    display: none !important;
+}
+
+
+.woodcrest-page.wc-role-admin #woodcrest-admin-demo-table .woodcrest-badge.wc-demo-role-manager {
+    background: #15803d !important;
+    border: 1px solid #166534 !important;
+    color: #fff !important;
+}
+.woodcrest-page.wc-role-admin #woodcrest-admin-demo-table .woodcrest-badge.wc-demo-role-tenant {
+    background: #1d4ed8 !important;
+    border: 1px solid #1e40af !important;
+    color: #fff !important;
+}
+.wc-theme-dark .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table .woodcrest-badge.wc-demo-role-manager {
+    background: #166534 !important;
+    border-color: #22c55e !important;
+}
+.wc-theme-dark .woodcrest-page.wc-role-admin #woodcrest-admin-demo-table .woodcrest-badge.wc-demo-role-tenant {
+    background: #1e40af !important;
+    border-color: #60a5fa !important;
+}
+
+
+body.wc-theme-light .woodcrest-header-box {
+    --wc-header-text: var(--wc-header-light-text, #23334B);
+    --wc-header-muted: var(--wc-header-light-muted, #475569);
+    --wc-header-nav-bg: rgba(255,255,255,.65);
+    --wc-header-nav-hover: rgba(255,255,255,.94);
+    background: var(--wc-header-light-bg, #EAF0FC) !important;
+    color: var(--wc-header-text) !important;
+    border-color: rgba(var(--wc-master-header-border-rgb, 147,180,239),.58) !important;
+    box-shadow: 0 12px 28px rgba(0,0,0,.13), inset 0 0 0 1px rgba(255,255,255,.36) !important;
+}
+body.wc-theme-dark .woodcrest-header-box {
+    --wc-header-text: #FFFFFF;
+    --wc-header-muted: #E2E8F0;
+    --wc-header-nav-bg: rgba(255,255,255,.08);
+    --wc-header-nav-hover: rgba(255,255,255,.17);
+    background: var(--wc-role-header-bg, #111827) !important;
+    color: var(--wc-header-text) !important;
+}
+body.wc-theme-light .woodcrest-header-box,
+body.wc-theme-light .woodcrest-header-box :is(h1,h2,h3,h4,h5,h6,span,strong,label,a,button),
+body.wc-theme-dark .woodcrest-header-box,
+body.wc-theme-dark .woodcrest-header-box :is(h1,h2,h3,h4,h5,h6,span,strong,label,a,button) {
+    color: var(--wc-header-text) !important;
+}
+body:is(.wc-theme-light,.wc-theme-dark) .woodcrest-header-box p {
+    color: var(--wc-header-muted) !important;
+}
+body:is(.wc-theme-light,.wc-theme-dark) .woodcrest-header-box .woodcrest-header-nav-link {
+    color: var(--wc-header-text) !important;
+    background: var(--wc-header-nav-bg) !important;
+    border-color: rgba(var(--wc-master-header-border-rgb,147,180,239),.5) !important;
+    box-shadow: none;
+}
+body:is(.wc-theme-light,.wc-theme-dark) .woodcrest-header-box .woodcrest-header-nav-link:hover,
+body:is(.wc-theme-light,.wc-theme-dark) .woodcrest-header-box .woodcrest-header-nav-link:focus-visible {
+    background: var(--wc-header-nav-hover) !important;
+    border-color: var(--wc-master-accent, #3675C2) !important;
+    box-shadow: 0 0 0 2px rgba(var(--wc-master-glow-rgb, 96,165,250),.16);
+}
+body.wc-theme-light .woodcrest-header-box .woodcrest-header-badge,
+body.wc-theme-dark .woodcrest-header-box .woodcrest-header-badge {
+    color: #FFFFFF !important;
+}
+body.wc-theme-light .woodcrest-header-box {
+    transition: background-color .22s ease, color .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+body.wc-theme-dark .woodcrest-header-box {
+    transition: background-color .22s ease, color .22s ease, border-color .22s ease, box-shadow .22s ease;
+}

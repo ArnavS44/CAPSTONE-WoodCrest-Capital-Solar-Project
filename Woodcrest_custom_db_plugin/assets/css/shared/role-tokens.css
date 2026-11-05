@@ -1,0 +1,267 @@
+
+
+
+:is(body.wc-page-role-admin, .wc-role-admin) {
+    --wc-master-accent: #DC5A5A;
+    --wc-master-accent-bright: #EF6868;
+    --wc-master-accent-strong: #991B1B;
+    --wc-master-tint: #FFF4F4;
+    --wc-master-tint-strong: #FEE2E2;
+    --wc-master-role-border: #FCA5A5;
+    --wc-master-header-bg: #7F1D1D;
+    --wc-header-light-bg: #F4B7B7;
+    --wc-header-light-text: #151515;
+    --wc-header-light-muted: #242424;
+    --wc-master-table-head-dark: #773F3F;
+    --wc-master-button-dark: #773F3F;
+    --wc-master-button-dark-hover: #8D4A4A;
+    --wc-master-glow-rgb: 239, 104, 104;
+    --wc-master-header-border-rgb: 252, 165, 165;
+    --wc-master-shadow-light: 0 14px 30px rgba(0,0,0,.18), 0 0 18px rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.05);
+    --wc-master-shadow-dark: 0 18px 38px rgba(0,0,0,.42), 0 0 16px rgba(var(--wc-master-glow-rgb),.46), 0 0 38px rgba(var(--wc-master-glow-rgb),.32), 0 0 0 1px rgba(var(--wc-master-glow-rgb),.30);
+    --wc-role-accent: var(--wc-master-accent);
+    --wc-role-tint: var(--wc-master-tint);
+    --wc-role-tint-strong: var(--wc-master-tint-strong);
+    --wc-role-border: var(--wc-master-role-border);
+    --wc-role-header-bg: var(--wc-master-header-bg);
+}
+
+:is(
+    body.wc-page-role-manager,
+    .wc-role-manager,
+    .wc-role-manager-content,
+    .woodcrest-manager-page,
+    .woodcrest-manager-panel,
+    .woodcrest-manager-action-grid,
+    .woodcrest-manager-action-card,
+    .wc-tn-card,
+    .woodcrest-invoice-create-card,
+    .woodcrest-invoice-preview,
+    .woodcrest-invoice-document,
+    .woodcrest-utility-workflow-module
+) {
+    --wc-master-accent: #2F9E76;
+    --wc-master-accent-bright: #16A34A;
+    --wc-master-accent-strong: #15803D;
+    --wc-master-tint: #ECFDF5;
+    --wc-master-tint-strong: #D1FAE5;
+    --wc-master-role-border: #6EE7B7;
+    --wc-master-header-bg: #061F1A;
+    --wc-header-light-bg: #BAEACD;
+    --wc-header-light-text: #14251A;
+    --wc-header-light-muted: #2B392F;
+    --wc-master-table-head-dark: #315F55;
+    --wc-master-button-dark: #315F55;
+    --wc-master-button-dark-hover: #3D7468;
+    --wc-master-glow-rgb: 47, 158, 118;
+    --wc-master-header-border-rgb: 110, 231, 183;
+    --wc-master-shadow-light: 0 14px 30px rgba(0,0,0,.18), 0 0 18px rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.05);
+    --wc-master-shadow-dark: 0 16px 34px rgba(0,0,0,.38), 0 0 12px rgba(var(--wc-master-glow-rgb),.38), 0 0 28px rgba(var(--wc-master-glow-rgb),.22), 0 0 0 1px rgba(var(--wc-master-glow-rgb),.32);
+    --wc-role-accent: var(--wc-master-accent);
+    --wc-role-tint: var(--wc-master-tint);
+    --wc-role-tint-strong: var(--wc-master-tint-strong);
+    --wc-role-border: var(--wc-master-role-border);
+    --wc-role-header-bg: var(--wc-master-header-bg);
+}
+
+:is(body.wc-page-role-tenant, .wc-role-tenant) {
+    --wc-master-accent: #4F7DD9;
+    --wc-master-accent-bright: #60A5FA;
+    --wc-master-accent-strong: #1D4ED8;
+    --wc-master-tint: #F3F7FF;
+    --wc-master-tint-strong: #DBEAFE;
+    --wc-master-role-border: #93B4EF;
+    --wc-master-header-bg: #0F172A;
+    --wc-header-light-bg: #BED5FF;
+    --wc-header-light-text: #172131;
+    --wc-header-light-muted: #27364A;
+    --wc-master-table-head-dark: #344D76;
+    --wc-master-button-dark: #344D76;
+    --wc-master-button-dark-hover: #405F8F;
+    --wc-master-glow-rgb: 96, 165, 250;
+    --wc-master-header-border-rgb: 147, 180, 239;
+    --wc-master-shadow-light: 0 14px 30px rgba(0,0,0,.18), 0 0 18px rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.05);
+    --wc-master-shadow-dark: 0 14px 30px rgba(0,0,0,.36), 0 0 8px rgba(var(--wc-master-glow-rgb),.20), 0 0 18px rgba(var(--wc-master-glow-rgb),.11), 0 0 0 1px rgba(var(--wc-master-glow-rgb),.18);
+    --wc-role-accent: var(--wc-master-accent);
+    --wc-role-tint: var(--wc-master-tint);
+    --wc-role-tint-strong: var(--wc-master-tint-strong);
+    --wc-role-border: var(--wc-master-role-border);
+    --wc-role-header-bg: var(--wc-master-header-bg);
+}
+
+
+:is(body.wc-theme-light.wc-page-role-admin, .wc-theme-light .wc-role-admin) {
+    --wc-mode-panel: #FFF5F5;
+    --wc-mode-panel-soft: #FEECEC;
+    --wc-mode-control: #FFFFFF;
+    --wc-mode-table-head: #F7DDDD;
+    --wc-mode-table-row: #FFFFFF;
+    --wc-mode-table-row-alt: #FFF7F7;
+    --wc-mode-table-hover: #FBE8E8;
+    --wc-mode-border: rgba(127,29,29,.28);
+    --wc-mode-divider: rgba(127,29,29,.22);
+    --wc-mode-text: #111827;
+    --wc-mode-muted: #5F4A4A;
+    --wc-mode-link: #7F1D1D;
+    --wc-mode-button: #7F1D1D;
+    --wc-mode-button-hover: #991B1B;
+    --wc-mode-shadow: var(--wc-master-shadow-light);
+}
+
+:is(
+    body.wc-theme-light.wc-page-role-manager,
+    .wc-theme-light .wc-role-manager,
+    .wc-theme-light .wc-role-manager-content,
+    .wc-theme-light .woodcrest-manager-page,
+    .wc-theme-light .woodcrest-manager-panel,
+    .wc-theme-light .woodcrest-manager-action-grid,
+    .wc-theme-light .woodcrest-manager-action-card,
+    .wc-theme-light .wc-tn-card,
+    .wc-theme-light .woodcrest-invoice-create-card,
+    .wc-theme-light .woodcrest-invoice-preview,
+    .wc-theme-light .woodcrest-invoice-document,
+    .wc-theme-light .woodcrest-utility-workflow-module
+) {
+    --wc-mode-panel: #F2FBF6;
+    --wc-mode-panel-soft: #E7F7EF;
+    --wc-mode-control: #FFFFFF;
+    --wc-mode-table-head: #E4F4EC;
+    --wc-mode-table-row: #FFFFFF;
+    --wc-mode-table-row-alt: #F4FAF7;
+    --wc-mode-table-hover: #E8F6EF;
+    --wc-mode-border: rgba(39,134,75,.28);
+    --wc-mode-divider: rgba(39,134,75,.22);
+    --wc-mode-text: #101716;
+    --wc-mode-muted: #496158;
+    --wc-mode-link: #1F6B3C;
+    --wc-mode-button: #27864B;
+    --wc-mode-button-hover: #1F6B3C;
+    --wc-mode-shadow: var(--wc-master-shadow-light);
+}
+
+:is(body.wc-theme-light.wc-page-role-tenant, .wc-theme-light .wc-role-tenant) {
+    --wc-mode-panel: #F3F7FF;
+    --wc-mode-panel-soft: #EAF1FF;
+    --wc-mode-control: #FFFFFF;
+    --wc-mode-table-head: #E7EFFF;
+    --wc-mode-table-row: #FFFFFF;
+    --wc-mode-table-row-alt: #F5F8FF;
+    --wc-mode-table-hover: #E9F1FF;
+    --wc-mode-border: rgba(37,99,235,.25);
+    --wc-mode-divider: rgba(37,99,235,.20);
+    --wc-mode-text: #111827;
+    --wc-mode-muted: #526078;
+    --wc-mode-link: #1D4ED8;
+    --wc-mode-button: #2563EB;
+    --wc-mode-button-hover: #1D4ED8;
+    --wc-mode-shadow: var(--wc-master-shadow-light);
+}
+
+
+:is(body.wc-theme-dark.wc-page-role-admin, .wc-theme-dark .wc-role-admin) {
+    --wc-mode-panel: #242424;
+    --wc-mode-panel-soft: #2C2C2C;
+    --wc-mode-control: #353535;
+    --wc-mode-table-head: var(--wc-master-table-head-dark);
+    --wc-mode-table-row: #464646;
+    --wc-mode-table-row-alt: #404040;
+    --wc-mode-table-hover: #535353;
+    --wc-mode-border: #5A5A5A;
+    --wc-mode-divider: rgba(255,255,255,.78);
+    --wc-mode-text: #FFFFFF;
+    --wc-mode-muted: #E5E7EB;
+    --wc-mode-link: #FFFFFF;
+    --wc-mode-button: var(--wc-master-button-dark);
+    --wc-mode-button-hover: var(--wc-master-button-dark-hover);
+    --wc-mode-shadow: var(--wc-master-shadow-dark);
+}
+
+:is(
+    body.wc-theme-dark.wc-page-role-manager,
+    .wc-theme-dark .wc-role-manager,
+    .wc-theme-dark .wc-role-manager-content,
+    .wc-theme-dark .woodcrest-manager-page,
+    .wc-theme-dark .woodcrest-manager-panel,
+    .wc-theme-dark .woodcrest-manager-action-grid,
+    .wc-theme-dark .woodcrest-manager-action-card,
+    .wc-theme-dark .wc-tn-card,
+    .wc-theme-dark .woodcrest-invoice-create-card,
+    .wc-theme-dark .woodcrest-invoice-preview,
+    .wc-theme-dark .woodcrest-invoice-document,
+    .wc-theme-dark .woodcrest-utility-workflow-module
+) {
+    --wc-mode-panel: #242424;
+    --wc-mode-panel-soft: #2C2C2C;
+    --wc-mode-control: #353535;
+    --wc-mode-table-head: var(--wc-master-table-head-dark);
+    --wc-mode-table-row: #464646;
+    --wc-mode-table-row-alt: #404040;
+    --wc-mode-table-hover: #535353;
+    --wc-mode-border: #5A5A5A;
+    --wc-mode-divider: rgba(255,255,255,.76);
+    --wc-mode-text: #FFFFFF;
+    --wc-mode-muted: #E5E7EB;
+    --wc-mode-link: #FFFFFF;
+    --wc-mode-button: var(--wc-master-button-dark);
+    --wc-mode-button-hover: var(--wc-master-button-dark-hover);
+    --wc-mode-shadow: var(--wc-master-shadow-dark);
+}
+
+:is(body.wc-theme-dark.wc-page-role-tenant, .wc-theme-dark .wc-role-tenant) {
+    --wc-mode-panel: #242424;
+    --wc-mode-panel-soft: #2C2C2C;
+    --wc-mode-control: #353535;
+    --wc-mode-table-head: var(--wc-master-table-head-dark);
+    --wc-mode-table-row: #464646;
+    --wc-mode-table-row-alt: #404040;
+    --wc-mode-table-hover: #535353;
+    --wc-mode-border: #5A5A5A;
+    --wc-mode-divider: rgba(255,255,255,.76);
+    --wc-mode-text: #FFFFFF;
+    --wc-mode-muted: #E5E7EB;
+    --wc-mode-link: #FFFFFF;
+    --wc-mode-button: var(--wc-master-button-dark);
+    --wc-mode-button-hover: var(--wc-master-button-dark-hover);
+    --wc-mode-shadow: var(--wc-master-shadow-dark);
+}
+
+
+:is(
+    body.wc-theme-light.wc-page-role-admin,
+    body.wc-theme-light.wc-page-role-manager,
+    body.wc-theme-light.wc-page-role-tenant,
+    body.wc-theme-dark.wc-page-role-admin,
+    body.wc-theme-dark.wc-page-role-manager,
+    body.wc-theme-dark.wc-page-role-tenant,
+    .wc-theme-light .wc-role-admin,
+    .wc-theme-light .wc-role-manager,
+    .wc-theme-light .wc-role-manager-content,
+    .wc-theme-light .wc-role-tenant,
+    .wc-theme-dark .wc-role-admin,
+    .wc-theme-dark .wc-role-manager,
+    .wc-theme-dark .wc-role-manager-content,
+    .wc-theme-dark .wc-role-tenant
+) {
+    --wc-role-table-head: var(--wc-mode-table-head);
+    --wc-role-table-base: var(--wc-mode-table-row);
+    --wc-role-table-alt: var(--wc-mode-table-row-alt);
+    --wc-role-table-hover: var(--wc-mode-table-hover);
+    --wc-role-table-border: var(--wc-mode-border);
+    --wc-role-table-text: var(--wc-mode-text);
+    --wc-role-table-muted: var(--wc-mode-muted);
+    --wc-role-table-link: var(--wc-mode-link);
+    --wc-role-form-bg: var(--wc-mode-panel-soft);
+    --wc-role-form-surface: var(--wc-mode-panel);
+    --wc-role-form-control: var(--wc-mode-control);
+    --wc-role-form-border: var(--wc-mode-border);
+    --wc-role-form-text: var(--wc-mode-text);
+    --wc-role-form-muted: var(--wc-mode-muted);
+    --wc-role-form-focus: var(--wc-master-accent);
+}
+
+body.wc-theme-light.wc-page-role-admin { --wc-page-background: #FDECEC; }
+body.wc-theme-light.wc-page-role-manager { --wc-page-background: #ECF8F1; }
+body.wc-theme-light.wc-page-role-tenant { --wc-page-background: #EDF4FF; }
+body.wc-theme-dark.wc-page-role-admin { --wc-page-background: #121416; }
+body.wc-theme-dark.wc-page-role-manager { --wc-page-background: #041713; }
+body.wc-theme-dark.wc-page-role-tenant { --wc-page-background: #0B1220; }
