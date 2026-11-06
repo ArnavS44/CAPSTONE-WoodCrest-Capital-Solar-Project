@@ -52,19 +52,29 @@ function woodcrest_power_handle_admin_forms() {
             break;
 
         case 'assign_suite_occupancy':
+            if (!woodcrest_v23_ready()) wp_die('Complete the Woodcrest v2.3 migration before changing occupancy.');
             $id = absint($_POST['occupancy_id'] ?? 0);
             $data = [
                 'suite_id' => absint($_POST['suite_id'] ?? 0),
-                'tenant_user_id' => absint($_POST['tenant_user_id'] ?? 0),
+                'tenant_user_id' => woodcrest_v23_primary_tenant_id(absint($_POST['tenant_user_id'] ?? 0)),
+                'business_id' => woodcrest_v23_ready() ? woodcrest_v23_ensure_business(woodcrest_v23_primary_tenant_id(absint($_POST['tenant_user_id'] ?? 0))) : null,
                 'start_date' => sanitize_text_field(wp_unslash($_POST['start_date'] ?? '')),
                 'end_date' => woodcrest_power_nullable_date($_POST['end_date'] ?? ''),
             ];
+            $woodcrest_db->query('START TRANSACTION');
             if (!$id) {
                 $data['created_at'] = current_time('mysql');
-                $woodcrest_db->insert($woodcrest_db->suite_occupancy, $data);
+                $written = $woodcrest_db->insert($woodcrest_db->suite_occupancy, $data);
             } else {
-                $woodcrest_db->update($woodcrest_db->suite_occupancy, $data, ['occupancy_id' => $id]);
+                $written = $woodcrest_db->update($woodcrest_db->suite_occupancy, $data, ['occupancy_id' => $id]);
             }
+            $granted = $written !== false && (!woodcrest_v23_suite_access_ready()
+                || woodcrest_v23_grant_primary_suite((int)$data['business_id'], (int)$data['suite_id']));
+            if (!$granted) {
+                $woodcrest_db->query('ROLLBACK');
+                wp_die('Occupancy or billing contact permission could not be saved. The transaction was rolled back.');
+            }
+            $woodcrest_db->query('COMMIT');
             woodcrest_power_redirect('woodcrest-power-users');
             break;
 
@@ -82,7 +92,8 @@ function woodcrest_power_handle_admin_forms() {
             ];
             if (!$id) {
                 $data['created_at'] = current_time('mysql');
-                $woodcrest_db->insert($woodcrest_db->property, $data);
+                $ok = $woodcrest_db->insert($woodcrest_db->property, $data);
+                if ($ok !== false) woodcrest_auto_assign_new_property((int)$woodcrest_db->insert_id);
             } else {
                 $woodcrest_db->update($woodcrest_db->property, $data, ['property_id' => $id]);
             }
@@ -154,7 +165,7 @@ function woodcrest_power_handle_admin_forms() {
             $data = [
                 'meter_id' => absint($_POST['meter_id'] ?? 0),
                 'utility_account_id' => absint($_POST['utility_account_id'] ?? 0),
-                'tenant_user_id' => woodcrest_power_nullable_absint($_POST['tenant_user_id'] ?? ''),
+                'tenant_user_id' => !empty($_POST['tenant_user_id']) ? woodcrest_v23_primary_tenant_id(absint($_POST['tenant_user_id'])) : null,
                 'suite_id' => woodcrest_power_nullable_absint($_POST['suite_id'] ?? ''),
                 'description' => woodcrest_power_nullable_text($_POST['description'] ?? ''),
                 'responsible_party_type' => woodcrest_power_enum($_POST['responsible_party_type'] ?? '', ['TENANT', 'VACANT_WOODCREST', 'CAM'], 'TENANT'),
@@ -175,12 +186,19 @@ function woodcrest_power_handle_admin_forms() {
             break;
 
         case 'save_reading':
+            if (!woodcrest_v23_ready()) wp_die('Complete the Woodcrest v2.3 migration before entering meter readings.');
             $id = absint($_POST['reading_id'] ?? 0);
             $current = floatval($_POST['current_read'] ?? 0);
             $previous = floatval($_POST['previous_read'] ?? 0);
+            $period_start = sanitize_text_field(wp_unslash($_POST['period_start'] ?? ''));
+            $period_end = sanitize_text_field(wp_unslash($_POST['period_end'] ?? ''));
+            if (!woodcrest_fe_date_is_valid($period_start) || !woodcrest_fe_date_is_valid($period_end) || $period_start > $period_end || $current < $previous || $previous < 0) wp_die('Invalid reading dates or values.');
             $data = [
                 'meter_id' => absint($_POST['meter_id'] ?? 0),
-                'reading_date' => sanitize_text_field(wp_unslash($_POST['reading_date'] ?? '')),
+                'reading_date' => $period_end,
+                'period_start' => $period_start,
+                'period_end' => $period_end,
+                'period_source' => 'VERIFIED',
                 'current_read' => $current,
                 'previous_read' => $previous,
                 'usage_amount' => $current - $previous,
@@ -219,12 +237,14 @@ function woodcrest_power_handle_admin_forms() {
             break;
 
         case 'save_invoice':
+            if (!woodcrest_v23_ready()) wp_die('Complete the Woodcrest v2.3 migration before saving invoices.');
             $id = absint($_POST['invoice_id'] ?? 0);
             $data = [
                 'invoice_number' => sanitize_text_field(wp_unslash($_POST['invoice_number'] ?? '')),
                 'property_id' => absint($_POST['property_id'] ?? 0),
                 'suite_id' => absint($_POST['suite_id'] ?? 0),
-                'tenant_user_id' => absint($_POST['tenant_user_id'] ?? 0),
+                'tenant_user_id' => woodcrest_v23_primary_tenant_id(absint($_POST['tenant_user_id'] ?? 0)),
+                'business_id' => woodcrest_v23_ready() ? woodcrest_v23_ensure_business(woodcrest_v23_primary_tenant_id(absint($_POST['tenant_user_id'] ?? 0))) : null,
                 'period_start' => sanitize_text_field(wp_unslash($_POST['period_start'] ?? '')),
                 'period_end' => sanitize_text_field(wp_unslash($_POST['period_end'] ?? '')),
                 'tenant_name_snapshot' => sanitize_text_field(wp_unslash($_POST['tenant_name_snapshot'] ?? '')),
@@ -235,9 +255,7 @@ function woodcrest_power_handle_admin_forms() {
                 'subtotal' => floatval($_POST['subtotal'] ?? 0),
                 'tax_total' => floatval($_POST['tax_total'] ?? 0),
                 'total_amount' => floatval($_POST['total_amount'] ?? 0),
-                'status' => woodcrest_power_enum($_POST['status'] ?? '', ['DRAFT', 'CONFIRMED', 'VOIDED', 'SENT'], 'DRAFT'),
-                'confirmed_at' => woodcrest_power_nullable_datetime($_POST['confirmed_at'] ?? ''),
-                'confirmed_by_user_id' => woodcrest_power_nullable_absint($_POST['confirmed_by_user_id'] ?? ''),
+                'status' => woodcrest_power_enum($_POST['status'] ?? '', ['DRAFTED', 'UNDRAFTED'], 'UNDRAFTED'),
             ];
             if (!$id) {
                 $data['created_at'] = current_time('mysql');
@@ -437,12 +455,12 @@ function woodcrest_power_billing_page() {
 
     echo '<h2>Recent master bills</h2>';
     woodcrest_power_render_table(['Property', 'Account', 'Period end', 'Amount', 'Status', 'Actions'], array_map(function ($row) {
-        return [$row->property_name, $row->account_number, $row->period_end, $row->total_amount, $row->status, woodcrest_power_edit_link('woodcrest-power-billing', 'edit_bill_id', $row->bill_id)];
+        return [$row->property_name, $row->account_number, $row->period_end, woodcrest_fe_invoice_money($row->total_amount), $row->status, woodcrest_power_edit_link('woodcrest-power-billing', 'edit_bill_id', $row->bill_id)];
     }, $latest_bills), true);
 
     echo '<h2>Recent invoices</h2>';
     woodcrest_power_render_table(['Invoice', 'Tenant', 'Period end', 'Amount', 'Status', 'Actions'], array_map(function ($row) {
-        return [$row->invoice_number, $row->full_name, $row->period_end, $row->total_amount, $row->status, woodcrest_power_edit_link('woodcrest-power-billing', 'edit_invoice_id', $row->invoice_id)];
+        return [$row->invoice_number, $row->full_name, $row->period_end, woodcrest_fe_invoice_money($row->total_amount), woodcrest_fe_invoice_status_label($row->status), woodcrest_power_edit_link('woodcrest-power-billing', 'edit_invoice_id', $row->invoice_id)];
     }, $latest_invoices), true);
     echo '</div>';
 }
@@ -756,7 +774,8 @@ function woodcrest_power_reading_form_html($meters, $users, $record = null) {
     $html = woodcrest_power_admin_form_start();
     $html .= '<input type="hidden" name="reading_id" value="' . esc_attr($val_id) . '" />';
     $html .= woodcrest_power_field('Meter', 'meter_id', 'select', $val_meter, true, $meter_options);
-    $html .= woodcrest_power_field('Reading date', 'reading_date', 'date', $val_date, true);
+    $html .= woodcrest_power_field('Period start', 'period_start', 'date', $record?->period_start ?? current_time('Y-m-01'), true);
+    $html .= woodcrest_power_field('Period end', 'period_end', 'date', $record?->period_end ?? ($val_date ?: current_time('Y-m-d')), true);
     $html .= woodcrest_power_field('Current read', 'current_read', 'number', $val_curr, true);
     $html .= woodcrest_power_field('Previous read', 'previous_read', 'number', $val_prev, true);
     $html .= woodcrest_power_field('Usage unit', 'usage_unit', 'text', $val_unit, true);
@@ -816,9 +835,7 @@ function woodcrest_power_invoice_form_html($properties, $suites, $users, $record
     $val_sub = $record?->subtotal ?? '';
     $val_tax = $record?->tax_total ?? '';
     $val_total = $record?->total_amount ?? '';
-    $val_stat = $record?->status ?? 'DRAFT';
-    $val_conf = empty($record->confirmed_at) ? '' : str_replace(' ', 'T', substr($record->confirmed_at, 0, 16));
-    $val_cuser = $record?->confirmed_by_user_id ?? '';
+    $val_stat = woodcrest_fe_invoice_status_label($record?->status ?? 'UNDRAFTED');
 
     $html = woodcrest_power_admin_form_start();
     $html .= '<input type="hidden" name="invoice_id" value="' . esc_attr($val_id) . '" />';
@@ -836,9 +853,7 @@ function woodcrest_power_invoice_form_html($properties, $suites, $users, $record
     $html .= woodcrest_power_field('Subtotal', 'subtotal', 'number', $val_sub, true);
     $html .= woodcrest_power_field('Tax total', 'tax_total', 'number', $val_tax, true);
     $html .= woodcrest_power_field('Total amount', 'total_amount', 'number', $val_total, true);
-    $html .= woodcrest_power_field('Status', 'status', 'select', $val_stat, true, ['DRAFT' => 'Draft', 'CONFIRMED' => 'Confirmed', 'VOIDED' => 'Voided', 'SENT' => 'Sent']);
-    $html .= woodcrest_power_field('Confirmed at', 'confirmed_at', 'datetime-local', $val_conf);
-    $html .= woodcrest_power_field('Confirmed by', 'confirmed_by_user_id', 'select', $val_cuser, false, $user_options);
+    $html .= woodcrest_power_field('Status', 'status', 'select', $val_stat, true, ['DRAFTED' => 'DRAFTED', 'UNDRAFTED' => 'UNDRAFTED']);
     $html .= woodcrest_power_submit('save_invoice', $record ? 'Update invoice' : 'Add invoice');
     return $html;
 }

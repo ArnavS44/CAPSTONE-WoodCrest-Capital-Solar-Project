@@ -5,7 +5,7 @@ global $wpdb;
 global $woodcrest_db;
 $woodcrest_db = $wpdb;
 
-// needed for conversion to wordpress
+
 $woodcrest_db->app_user             = $wpdb->users; 
 $woodcrest_db->invoice              = $wpdb->prefix . 'wc_invoice';
 $woodcrest_db->invoice_line_item    = $wpdb->prefix . 'wc_invoice_line_item';
@@ -21,5 +21,6 @@ $woodcrest_db->suite_occupancy       = $wpdb->prefix . 'wc_suite_occupancy';
 $woodcrest_db->user_property_access  = $wpdb->prefix . 'wc_user_property_access';
 $woodcrest_db->utility_account      = $wpdb->prefix . 'wc_utility_account';
 $woodcrest_db->utility_reading      = $wpdb->prefix . 'wc_utility_reading';
+$woodcrest_db->utility_monthly_cost  = $wpdb->prefix . 'wc_utility_monthly_cost';
 
 
